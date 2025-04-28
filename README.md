@@ -10,4 +10,16 @@ This project proposes a hybrid method combining pattern-based detection with a c
 3. Synthetic Dataset Generation with Contextual Embedding
 4. Real-world Financial Document Testing
 5. Precision, Recall, F1 Score, and Accuracy Evaluation
-6. Fully Documented Training and Anonymization Pipelines
+
+## Performance
+### Synthetic Data:
+1. Precision: 94.7%
+2. Recall: 89.4%
+3. F1 Score: 91.1%
+4. Accuracy: 89.4%
+
+### Real-world Financial Documents - Bank of America Audit and Vendor Invoices:
+1. Approximate Accuracy: 93%
+
+## License
+This repository is released under a custom academic license for research and educational purposes only. Commercial use, redistribution, or modification requires explicit permission. Proper citation of this study is mandatory for any use.
