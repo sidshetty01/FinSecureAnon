@@ -45,3 +45,6 @@ PII Detection And Anonymization Framework
                               └─> Generation of Graphs and Matrix along with Evaluation Scores
 
 ---
+
+---
+## Quick Start
