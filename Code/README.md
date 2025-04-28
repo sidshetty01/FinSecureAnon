@@ -5,9 +5,9 @@ This Folder Contains the PII Detection and Anonymization Code
 ## Table of contents
 1. [Key Features](#key-Features)  
 2. [Code Structure](#Code-Structure)  
-3. [Quick Start](#quick-start)  
-4. [Requirements](#requirements)  
-5. [License](#license)
+3. [Quick Start](#Quick-Start)  
+4. [Requirements](#Requirements)  
+5. [License](#License)
 
 ---
 
@@ -50,13 +50,34 @@ cd Code
 python -m pip install -r requirements.txt
 
 # 3. Run the full pipeline
-python PII_Code.py
+python PII_Detection_and_Anonymozation.py
 # → Creates Training_Set.csv, Testing_Set.csv, Results.xlsx, and Saves the model in /PII Model/
 ```
 ---
 
 ## Requirements
 
+### Hardware (what I Trained and Tested on)
+
+| Component | Spec |
+|-----------|------|
+| **CPU**   | Intel i5-10300H @ 2.5 GHz |
+| **GPU**   | Nvidia GTX 1650 Ti (4 GB) – *optional, CPU-only works* |
+| **RAM**   | 8 GB DDR4 (more = faster) |
+
+### Software & Python packages
+Information on Software/Libraries of Python along with their Version are Present in requirements.txt within this Folder
 
 ---
 
+---
+
+## License
+
+The source code is released under a **Custom Academic License**:
+
+* **Permitted use** – Research and educational projects only with Proper Permission from Owner.  
+* **Prohibited without prior written consent** – Any Commercial Use, Redistribution, or Modification.  
+* **Attribution required** – If you Publish Work or Create Derivatives that rely on this code, you **Must Cite**:
+
+---
