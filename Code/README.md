@@ -1,19 +1,13 @@
 # PII Detection & Anonymization Framework
-
-Synthetic-data generation ➜ spaCy NER training ➜ model evaluation ➜ audit-style reporting ➜ automatic text anonymization – all driven by **`PII_Code.py`**.
-
+This Folder Contains the PII Detection and Anonymization Code
 ---
 
 ## Table of contents
 1. [Key Features](#key-Features)  
-2. [Project structure](#project-structure)  
-3. [Quick start](#quick-start)  
-4. [Configuration knobs](#configuration-knobs)  
-5. [Outputs explained](#outputs-explained)  
-6. [Interpreting the metrics](#interpreting-the-metrics)  
-7. [Extending the project](#extending-the-project)  
-8. [Requirements](#requirements)  
-9. [License](#license)
+2. [Code Structure](#Code-Structure)  
+3. [Quick Start](#quick-start)  
+4. [Requirements](#requirements)  
+5. [License](#license)
 
 ---
 
@@ -34,3 +28,20 @@ Synthetic-data generation ➜ spaCy NER training ➜ model evaluation ➜ audit-
 
 ---
 
+---
+
+## Code Structure
+
+The Structure of the Code is as Follows - 
+
+PII Detection And Anonymization Framework
+  └─> Importing All Required Libraries
+      └─> Generation Of Training Dataset
+          └─> Annotation Of True PII Data Position In Training Dataset
+              └─> Training Model
+                  └─> Testing Dataset Generation
+                      └─> Testing Code To Get Results
+                          └─> Anonymization Of Texts To Anonymize PII Data In Texts
+                              └─> Generation of Graphs and Matrix along with Evaluation Scores
+
+---
