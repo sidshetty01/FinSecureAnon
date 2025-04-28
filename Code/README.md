@@ -43,8 +43,8 @@ PII Detection And Anonymization Framework ─> Importing All Required Libraries 
 ## Quick Start
 ```bash
 # 1. Clone the repo
-git clone https://github.com/your-org/pii-framework.git
-cd pii-framework
+git clone https://github.com/Kush-Mishra-403/PII-Detection-and-Anonymization.git
+cd Code
 
 # 2. Install dependencies
 python -m pip install -r requirements.txt
@@ -52,5 +52,11 @@ python -m pip install -r requirements.txt
 # 3. Run the full pipeline
 python PII_Code.py
 # → Creates Training_Set.csv, Testing_Set.csv, Results.xlsx, and Saves the model in /PII Model/
+```
+---
+
+## Requirements
+
 
 ---
+
