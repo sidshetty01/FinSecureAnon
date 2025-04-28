@@ -13,18 +13,18 @@ This Folder Contains the PII Detection and Anonymization Code
 
 ## Key Features
 
-| # | Feature | Why It Matters |
-|---|---------|---------------|
-| 1 | **Hybrid Rule-Based And ML Pipeline** | Simple rules grab the easy PII; a spaCy model handles the tricky, context-based cases. |
-| 2 | **Big Synthetic Training Data** | Faker makes 45 k fake names, cards, SSNs, etc., so no real data is exposed. |
-| 3 | **Realistic Finance Templates** | PII is dropped into audit letters, invoices, and tax mails, so the model learns true document flow. |
-| 4 | **Noise And Format Variety** | Random punctuation loss, multi-line addresses, and global phone codes toughen the model for messy text. |
-| 5 | **Lightweight Custom spaCy NER** | Trains fast on a laptop; easy to add new PII labels with `ner.add_label()`. |
-| 6 | **Auto Span Annotation** | Code marks the exact start-end of every fake PII, saving many hours of manual tagging. |
-| 7 | **Careful Training Loop** | 20 passes, mini-batches, and dropout keep the model sharp without over-fit. |
-| 8 | **Full Evaluation Metrics** | Prints precision, recall, F1, accuracy, plus confusion, ROC, and PR curves. |
-| 9 | **Safe Token-Level Anonymization** | Replaces each hit with tags like `[NAME REDACTED]`, so files stay readable. |
-|10| **Ready For Scale And Simple Deploy** | Pure-Python (spaCy, Faker, pandas). Runs end-to-end with no GPU. |
+| Feature | Description |
+|:--------|:------------|
+| **Hybrid Rule-Based and ML Pipeline** | Combines simple regex-based rules and a custom-trained spaCy NER model to maximize precision and context-based PII detection. |
+| **Synthetic Dataset Generation** | Creates 45,030 entries of synthetic PII data (names, emails, SSNs, phone numbers, etc.) using the Faker library, simulating realistic financial document contexts. |
+| **Contextual Embedding with Templates** | Embeds generated PII into templates mimicking actual financial documents like audit reports, tax filings, and compliance notices to ensure domain realism. |
+| **Noise Introduction for Robustness** | Introduces random noise such as punctuation loss to make the model resilient against real-world formatting inconsistencies. |
+| **Custom Lightweight spaCy NER Model** | Trains a blank spaCy NER model optimized for PII detection with minimal resource requirements, enabling rapid training on CPU/GPU setups. |
+| **Automated Annotation of True PII Positions** | Precisely annotates start and end indices of all PII types within synthetic texts, ensuring accurate supervised learning. |
+| **Extensive Evaluation Metrics** | Evaluates model using precision, recall, F1 score, accuracy, confusion matrices, precision-recall curves, and ROC curves on both synthetic and real-world financial documents. |
+| **Real-World Validation** | Validates model performance on actual financial audit reports and vendor invoices to demonstrate practical applicability. |
+| **Anonymization Pipeline** | Replaces detected PII entities with standardized placeholders (e.g., `[NAME REDACTED]`) while maintaining document readability and semantic structure. |
+| **Scalable and Efficient Deployment** | Designed for rapid, scalable deployment without reliance on heavy transformer models, balancing performance with computational efficiency. |
 
 ---
 
@@ -57,7 +57,7 @@ python PII_Detection_and_Anonymization.py
 
 ## Requirements
 
-### Hardware (what I Trained and Tested on)
+### Hardware (Trained and Tested on)
 
 | Component | Spec |
 |-----------|------|
