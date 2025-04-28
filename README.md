@@ -73,9 +73,9 @@ Metrics have been computed based on entity-level detection, ensuring high reliab
 ## **License and Usage Terms**
 
 ### **1. The source code is provided under a Custom Academic License.**
-### **2. Permitted Use: Strictly for research and educational purposes with adequate permission from owner.**
-### **3. Prohibited Use: Commercial use, Redistribution, or Modification without prior written consent.**
-### **4. Attribution Required: If you publish work or create derivatives that use this repository, you must appropriately cite this GitHub repository and the associated research study.**
-### **5. Strict Copyright Enforcement:  Any use of the code, datasets, or any other resources from this repository without adequate citation and prior permission from the owner will be treated as a copyright violation. Such unauthorized use will result in immediate copyright strikes, takedown notices, and legal action if necessary.**
+### **2. Permitted Use**: Strictly for research and educational purposes with adequate permission from owner.
+### **3. Prohibited Use**: Commercial use, Redistribution, or Modification without prior written consent.
+### **4. Attribution Required**: If you publish work or create derivatives that use this repository, you must appropriately cite this GitHub repository and the associated research study.
+### **5. Strict Copyright Enforcement**:  Any use of the code, datasets, or any other resources from this repository without adequate citation and prior permission from the owner will be treated as a copyright violation. Such unauthorized use will result in immediate copyright strikes, takedown notices, and legal action if necessary.
 
 
