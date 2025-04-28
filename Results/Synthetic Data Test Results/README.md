@@ -1,5 +1,5 @@
 # Results of Testing Conducted on PII Detection and Anonymization Model using Synthetic Financial Document Templates -
-This Folder contains Test Results of Testing conducted on Real Financial Document - 
+This Folder contains Test Results of Testing conducted on Synthetic Financial Document Templates - 
 1. Audit Reports
 2. Compliance Reports
 3. Transaction Reports
