@@ -34,17 +34,23 @@ This Folder Contains the PII Detection and Anonymization Code
 
 The Structure of the Code is as Follows - 
 
-PII Detection And Anonymization Framework
-  └─> Importing All Required Libraries
-      └─> Generation Of Training Dataset
-          └─> Annotation Of True PII Data Position In Training Dataset
-              └─> Training Model
-                  └─> Testing Dataset Generation
-                      └─> Testing Code To Get Results
-                          └─> Anonymization Of Texts To Anonymize PII Data In Texts
-                              └─> Generation of Graphs and Matrix along with Evaluation Scores
+PII Detection And Anonymization Framework ─> Importing All Required Libraries ─> Generation Of Training Dataset ─> Annotation Of True PII Data Position In Training Dataset ─> Training Model ─> Testing Dataset Generation ─> Testing Code To Get Results ─> Anonymization Of Texts To Anonymize PII Data In Texts ─> Generation of Graphs and Matrix along with Evaluation Scores
 
 ---
 
 ---
+
 ## Quick Start
+```bash
+# 1. Clone the repo
+git clone https://github.com/your-org/pii-framework.git
+cd pii-framework
+
+# 2. Install dependencies
+python -m pip install -r requirements.txt
+
+# 3. Run the full pipeline
+python PII_Code.py
+# → Creates Training_Set.csv, Testing_Set.csv, Results.xlsx, and Saves the model in /PII Model/
+
+---
