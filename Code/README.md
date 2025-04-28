@@ -50,7 +50,7 @@ cd Code
 python -m pip install -r requirements.txt
 
 # 3. Run the full pipeline
-python PII_Detection_and_Anonymozation.py
+python PII_Detection_and_Anonymization.py
 # → Creates Training_Set.csv, Testing_Set.csv, Results.xlsx, and Saves the model in /PII Model/
 ```
 ---
