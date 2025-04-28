@@ -5,6 +5,8 @@ A scalable framework integrating hybrid rule-based NLP and Machine Learning appr
 This project proposes a hybrid method combining pattern-based detection with a custom-trained spaCy NER model for robust PII detection and anonymization. It handles sensitive fields like names, phone numbers, emails, addresses, SSNs, credit card numbers, URLs, and company names across structured and unstructured financial texts.
 
 ## Features
+---
+
 ### PII Types Detected:
 1. Person Names
 2. Email Addresses
@@ -15,30 +17,58 @@ This project proposes a hybrid method combining pattern-based detection with a c
 7. Company/Organization Names
 8. Website URLs
 
-### Custom Anonymization:
-Detected PII is replaced with placeholders like [NAME REDACTED], [EMAIL REDACTED], [PHONE NUMBER REDACTED], etc.
+---
+
+---
 
 ### Data Handling:
-1. Synthetic datasets generated with realistic financial document templates.
-2. Real-world audit reports and vendor invoices tested for validation.
+The model has been Trained and Evaluated on **both Synthetic and Real-World Financial Documents** to ensure practical robustness.
+
+| Data Type | Details |
+|:----------|:--------|
+| **Synthetic Training and Testing Data** | Generated using finance-related templates with embedded fake PII using Faker library. Types include: <br> - Audit Reports <br> - Compliance Reports <br> - Transaction Reports <br> - Tax Reports <br> - Invoices <br> - Customer Conversations and Feedbacks <br> - Bank Reports <br> - Bank Statements |
+| **Real-World Testing Data** | Real financial documents containing naturally occurring PII. Documents include: <br> - Bank of America Audit Report <br> - Amazon Vendor Invoice <br> - CPB Software Vendor Invoice |
+
+🔗 ** Synthetic Dataset Link:** [Mendeley Data Repository](https://doi.org/10.17632/tzrjx692jy)
+
+---
+
+---
 
 ### Model:
 
-1. Custom-trained lightweight spaCy Named Entity Recognition (NER) model.
-2. Optimized for financial document structures.
+- **Architecture:** A lightweight, custom-trained spaCy NER model optimized for the financial domain.
+- **Training Approach:** 
+  - Combined rule-based preprocessing and automatic span annotation for efficient data labeling.
+  - Iterative model training with controlled dropout and mini-batch strategy for better generalization.
+- **Anonymization Placeholders Used:**
+  - `[NAME REDACTED]`
+  - `[EMAIL REDACTED]`
+  - `[PHONE NUMBER REDACTED]`
+  - `[ADDRESS REDACTED]`
+  - `[SSN REDACTED]`
+  - `[CREDIT CARD REDACTED]`
+  - `[COMPANY NAME REDACTED]`
+  - `[URL REDACTED]`
+  
+Detected PII entities are replaced with these placeholders to anonymize sensitive information while preserving document readability.
 
-### Evaluation Metrics:
-Precision, Recall, F1-Score, and Accuracy computed for synthetic and real-world data
+---
 
-## Performance
-### Synthetic Data - Financial Document Templates such as Audit Reports, Tax Reports, Invoices, Commercial Transaction Record, Customer Feedbacks:
-1. Precision: 94.7%
-2. Recall: 89.4%
-3. F1 Score: 91.1%
-4. Accuracy: 89.4%
+---
 
-### Real-world Financial Documents - Bank of America Audit Report and Vendor Invoices:
-1. Approximate Accuracy: 93%
+## 📈 Evaluation Metrics
+
+The model has been rigorously evaluated on both synthetic and real-world data:
+
+| Dataset                         | Precision | Recall | F1-Score | Accuracy |
+|:---------------------------------|:---------:|:------:|:--------:|:--------:|
+| Synthetic Financial Documents   | 94.7%     | 89.4%  | 91.1%    | 89.4%    |
+| Real-World Financial Documents   | ~93%      |  -     |   -      | ~93%     |
+
+Metrics have been computed based on entity-level detection, ensuring high reliability even in complex financial document layouts.
+
+---
 
 ## License
 This repository is released under a custom academic license for research and educational purposes only. Commercial use, redistribution, or modification requires explicit permission. Proper citation of this study is mandatory for any use.
