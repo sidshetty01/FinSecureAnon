@@ -4,7 +4,7 @@ PII Detection and Anonymization Framework
 This script generates synthetic datasets, annotates PII entities, trains a custom spaCy NER model,
 evaluates its performance, and anonymizes detected PII from text data.
 
-Author: [Your Name]
+Author: Kushagra Mishra
 """
 
 """Importing all required Libraries"""
