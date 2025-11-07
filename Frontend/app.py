@@ -81,6 +81,44 @@ def render_highlighted(text: str, ents: List[Dict]) -> str:
     return "".join(parts)
 
 
+def extract_pdf_text(file) -> str:
+    """
+    Extract text from a PDF UploadedFile or path-like using pdfplumber if available,
+    falling back to PyPDF2. Returns a single concatenated string.
+    """
+    text = ""
+    # Try pdfplumber first
+    try:
+        import pdfplumber  # type: ignore
+        try:
+            # Ensure file pointer at start
+            if hasattr(file, "seek"):
+                file.seek(0)
+            with pdfplumber.open(file) as pdf:
+                for page in pdf.pages:
+                    t = page.extract_text() or ""
+                    text += t + "\n"
+            if text.strip():
+                return text
+        except Exception:
+            pass
+    except Exception:
+        pass
+
+    # Fallback: PyPDF2
+    try:
+        from PyPDF2 import PdfReader  # type: ignore
+        if hasattr(file, "seek"):
+            file.seek(0)
+        reader = PdfReader(file)
+        for page in reader.pages:
+            t = page.extract_text() or ""
+            text += t + "\n"
+        return text
+    except Exception as e:
+        raise RuntimeError(f"Failed to read PDF: {e}")
+
+
 # -----------------------------
 # UI
 # -----------------------------
@@ -103,8 +141,17 @@ with st.sidebar:
     st.caption("Train the model first using the Code script, which saves to 'PII Model'.")
 
     st.header("Batch Processing")
-    st.caption("Upload a CSV with a 'text' column.")
-    batch_file = st.file_uploader("CSV file", type=["csv"], accept_multiple_files=False)
+    st.caption("Upload one or more CSVs with a 'text' column OR process a local folder of CSVs.")
+    batch_files = st.file_uploader("CSV file(s)", type=["csv"], accept_multiple_files=True)
+
+    st.caption("Or upload PDFs to extract, detect, and anonymize text.")
+    pdf_files = st.file_uploader("PDF file(s)", type=["pdf"], accept_multiple_files=True)
+
+    st.divider()
+    st.subheader("Process Local Folder")
+    dataset_folder = st.text_input("Folder path (contains CSV files)", value="", placeholder=r"C:\\path\\to\\dataset")
+    text_col_name = st.text_input("Text column name", value="text")
+    run_folder = st.button("Process folder of CSVs")
 
 # Load model
 nlp = None
@@ -154,12 +201,19 @@ if run and sample_text and nlp:
 
 st.divider()
 
-# Batch processing
-if batch_file is not None and nlp:
+# Batch processing (uploaded files)
+if batch_files and nlp:
     try:
-        df = pd.read_csv(batch_file)
+        dfs = []
+        for f in batch_files:
+            try:
+                dfs.append(pd.read_csv(f))
+            except UnicodeDecodeError:
+                f.seek(0)
+                dfs.append(pd.read_csv(f, encoding="latin-1"))
+        df = pd.concat(dfs, ignore_index=True)
         if "text" not in df.columns:
-            st.error("CSV must contain a 'text' column.")
+            st.error("CSV must contain a 'text' column. You can also use the folder mode and specify a custom column name.")
         else:
             results = []
             anonymized = []
@@ -171,7 +225,7 @@ if batch_file is not None and nlp:
             out_df["predictions"] = results
             out_df["anonymized_text"] = anonymized
 
-            st.success(f"Processed {len(out_df)} rows.")
+            st.success(f"Processed {len(out_df)} rows from {len(batch_files)} file(s).")
             st.dataframe(out_df.head(50))
 
             csv_bytes = out_df.to_csv(index=False).encode("utf-8")
@@ -183,6 +237,79 @@ if batch_file is not None and nlp:
             )
     except Exception as e:
         st.error(f"Batch processing failed: {e}")
+
+# Folder-based batch processing
+if run_folder and nlp:
+    try:
+        p = Path(dataset_folder).expanduser()
+        if not p.exists() or not p.is_dir():
+            st.error("Folder not found or not a directory.")
+        else:
+            import glob
+            csv_paths = sorted(glob.glob(str(p / "*.csv")))
+            if not csv_paths:
+                st.error("No CSV files found in the folder.")
+            else:
+                dfs = []
+                for path in csv_paths:
+                    try:
+                        dfs.append(pd.read_csv(path))
+                    except UnicodeDecodeError:
+                        dfs.append(pd.read_csv(path, encoding="latin-1"))
+                df = pd.concat(dfs, ignore_index=True)
+                if text_col_name not in df.columns:
+                    st.error(f"Column '{text_col_name}' not found. Available columns: {list(df.columns)}")
+                else:
+                    results = []
+                    anonymized = []
+                    for t in df[text_col_name].astype(str).tolist():
+                        ents = predict(nlp, t)
+                        results.append(json.dumps(ents, ensure_ascii=False))
+                        anonymized.append(anonymize(t, ents))
+                    out_df = df.copy()
+                    out_df["predictions"] = results
+                    out_df["anonymized_text"] = anonymized
+
+                    st.success(f"Processed {len(out_df)} rows from {len(csv_paths)} CSV file(s).")
+                    st.dataframe(out_df.head(50))
+
+                    csv_bytes = out_df.to_csv(index=False).encode("utf-8")
+                    st.download_button(
+                        "Download results CSV",
+                        data=csv_bytes,
+                        file_name="pii_results_folder.csv",
+                        mime="text/csv",
+                    )
+    except Exception as e:
+        st.error(f"Folder processing failed: {e}")
+
+# PDF processing (uploaded PDFs)
+if 'pdf_files' in locals() and pdf_files and nlp:
+    try:
+        for updf in pdf_files:
+            try:
+                pdf_text = extract_pdf_text(updf)
+            except Exception as e:
+                st.error(f"Failed to read {updf.name}: {e}")
+                continue
+            if not pdf_text or not pdf_text.strip():
+                st.warning(f"No extractable text found in {updf.name}.")
+                continue
+            ents = predict(nlp, pdf_text)
+            anon = anonymize(pdf_text, ents)
+
+            with st.expander(f"PDF: {updf.name} – {len(ents)} entities detected"):
+                st.markdown("**Preview (first 1500 chars, anonymized):**")
+                st.code(anon[:1500] + ("..." if len(anon) > 1500 else ""))
+                st.markdown("**Download anonymized full text:**")
+                st.download_button(
+                    label=f"Download {updf.name}.anonymized.txt",
+                    data=anon.encode("utf-8"),
+                    file_name=f"{updf.name}.anonymized.txt",
+                    mime="text/plain",
+                )
+    except Exception as e:
+        st.error(f"PDF processing failed: {e}")
 
 st.caption(
     "Tip: Labels supported by the model include name, email, phone, address, credit_card, company, url, ssn."
