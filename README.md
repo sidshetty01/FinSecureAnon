@@ -1,4 +1,6 @@
 # PII Detection and Anonymization in Financial Documents
+Required Python: 3.11
+
 A scalable framework integrating hybrid rule-based NLP and Machine Learning approaches for detecting and anonymizing Personally Identifiable Information (PII) in financial documents. Achieves high precision, recall, and accuracy while preserving document readability.
 
 ## Overview
