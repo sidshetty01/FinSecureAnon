@@ -20,6 +20,11 @@ import seaborn as sns
 from faker import Faker
 
 import spacy
+try:
+    spacy.require_gpu()
+    print("GPU enabled for Spacy")
+except Exception as e:
+    print(f"Could not enable GPU: {e}")
 from spacy.training import Example, offsets_to_biluo_tags
 from spacy.util import minibatch, compounding
 
@@ -74,7 +79,7 @@ def remove_random_full_stops(text, removal_probability=0.3):
     return text
 
 # Generate Dataset with any Number of Samples
-pii_dataset = generate_pii_data(45000)
+pii_dataset = generate_pii_data(150000)
 
 # Combined sentence/audit templates with PII data
 sentence_templates = [
@@ -286,18 +291,6 @@ Please note that this document contains confidential information, and unauthoriz
 
 "We regret to inform you that a security breach was detected on {company}'s systems, which may have exposed your personal information, including your name ({name}), email ({email}), phone number ({phone}), and Social Security Number (SSN) ({ssn}). The breach was traced back to unauthorized access from IP address 190.22.99. If you notice any suspicious activity on your credit card ending in {credit_card}, please contact us immediately. You can also check for updates on our security measures at {url}. The compromised data was stored at our facility located at {address}.",
 
-"Dear {name}, thank you for creating a new account with {company}. Your registered email is {email}, your contact number is {phone}, and your Social Security Number (SSN) is {ssn}. The account was set up using the billing address {address}, and the primary credit card linked to the account ends in {credit_card}. Please visit {url} to verify your account and update any personal details. If you need assistance, contact our support team.",
-
-"This Service Contract between {company} and {name} was entered into 11/11/2005 at {address}. The contract stipulates that all payments will be processed through the credit card provided by {name}, ending in {credit_card}. {name}'s Social Security Number (SSN) is {ssn}. For further reference, correspondence will be sent to {email}, and all communications will be conducted via {phone}. The full contract details are available online at {url}.",
-
-"Dear {name}, we have received your loan application at {company}, and it is currently under review. Your application, submitted on 1998, includes personal details such as your home address ({address}), email ({email}), contact number ({phone}), and Social Security Number (SSN) ({ssn}). The loan amount requested will be credited to your account associated with the credit card ending in {credit_card}. Please check {url} for real-time updates on your application status.",
-
-"Insurance claim #CLM12345678 has been initiated by {name} for {company}. The claim, associated with the address {address}, will be processed through the credit card ending in {credit_card}. Our claims department may reach out to you at {phone} or via email at {email} for additional information. {name}'s Social Security Number (SSN) is {ssn}. Claim details are available online at {url}.",
-
-"We are pleased to welcome {name} to {company}. As part of the onboarding process, we have registered your personal details, including your residential address ({address}), contact number ({phone}), email ({email}), and Social Security Number (SSN) ({ssn}). Your corporate credit card, ending in {credit_card}, will be issued within the next five business days. For company policies and other relevant information, please visit {url}.",
-
-"Dear {name}, your subscription with {company} is up for renewal. The subscription associated with the email {email}, phone number {phone}, and billing address {address} will automatically renew using your credit card ending in {credit_card}. Your Social Security Number (SSN) on file is {ssn}. To manage your subscription or for more details, please visit {url}. If you need to update your payment information, contact our support team."
-
 ]
 
 # Apply the templates to generate sentences with PII data
@@ -435,7 +428,7 @@ for text, annotations in training_data:
 optimizer = nlp.begin_training()
 
 # Parameters
-iterations = 20  # Number of iterations
+iterations = 25  # Number of iterations
 dropout = 0.5  # Dropout rate
 batch_size_start = 4  # Start of the batch size range
 batch_size_end = 32  # End of the batch size range

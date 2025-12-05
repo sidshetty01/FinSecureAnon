@@ -1,0 +1,1401 @@
+name,credit_card,email,url,phone,address,company,ssn,text,True Predictions
+Christina Sims,"Mastercard
+William Stafford
+5446878656651726 10/27
+CVV: 319
+",michael26@example.org,https://www.fitzgerald.com/,+834 6487445519,"117 Carla Ports Apt. 869
+Mooreborough, OK 94360","Martin, Odom and Clark",351-91-4849,"The complete report for Martin, Odom and Clark is available at https://www.fitzgerald.com/.","[(63, 90, 'url'), (24, 46, 'company')]"
+Olivia Barton,"Mastercard
+Phillip Solomon
+2235046852399928 09/31
+CVV: 997
+",selenashelton@example.org,http://miller.biz/,+85 4672460030,"34838 Mitchell Branch
+Coreyport, ND 86735","Warner, Watson and Smith",631-11-7677,Contact Olivia Barton at selenashelton@example.org or +85 4672460030.,"[(8, 21, 'name'), (25, 50, 'email'), (54, 68, 'phone')]"
+Jacqueline Williams,"Maestro
+Kristin Diaz
+060438701637 10/34
+CVV: 105
+",bergerjohn@example.org,https://hawkins.com/,+44 0089602305,"45770 Zachary Circles
+Johnfort, MP 11638",Campbell-Banks,850-80-6492,"Payment made by Jacqueline Williams using card Maestro
+Kristin Diaz
+060438701637 10/34
+CVV: 105
+.","[(16, 35, 'name'), (47, 96, 'credit_card')]"
+John Hall,"VISA 19 digit
+Jeremy Wells
+4826532454817230055 01/35
+CVC: 227
+",donald55@example.org,http://smith.net/,+91 3283702876,"969 Lawrence Terrace Suite 246
+Lake Jennifer, CO 06010",Griffin-Keith,006-51-7859,"The address is 969 Lawrence Terrace Suite 246
+Lake Jennifer, CO 06010","[(15, 69, 'address')]"
+Ian Nolan,"JCB 15 digit
+Rick Hansen
+213123305229224 01/27
+CVC: 791
+",dblack@example.com,https://www.rodriguez-rogers.com/,+91 2703439560,"10755 Kim Rue
+Amybury, GU 23503","Shepherd, Sampson and Wolf",288-85-3850,SSN 288-85-3850 is required,"[(4, 15, 'ssn')]"
+Kathy Jackson,"VISA 13 digit
+Jessica Morgan
+4022221701139 03/35
+CVC: 259
+",dcraig@example.org,http://www.flynn-ramirez.com/,+512 7797346637,"01611 Janet Square
+East Rogershire, LA 49490",Snyder Ltd,588-17-8887,"Invoice for Snyder Ltd, sent to 01611 Janet Square
+East Rogershire, LA 49490.","[(32, 76, 'address'), (12, 22, 'company')]"
+Denise Cline,"Mastercard
+Adrian Bond
+2276920166895336 06/28
+CVV: 064
+",dana30@example.com,https://goodman.biz/,+09 0926029847,"7273 Whitaker Underpass
+Patrickborough, DC 70633","Nguyen, Norris and Thompson",849-40-1239,"Reach out to Denise Cline regarding the Nguyen, Norris and Thompson audit.","[(13, 25, 'name'), (40, 67, 'company')]"
+Cynthia Morris,"JCB 16 digit
+Samantha Hudson
+3552237561589304 05/31
+CVC: 870
+",kimberlykirk@example.org,http://brown-bautista.com/,+04 6633160508,"13713 Anthony Passage Suite 895
+Lake Chelsea, PR 04651",Anderson LLC,704-94-2438,My email is kimberlykirk@example.org and phone is +04 6633160508.,"[(12, 36, 'email'), (50, 64, 'phone')]"
+Matthew Garza,"Discover
+Sandra Jones
+6011430025159917 02/30
+CVC: 975
+",pkemp@example.org,http://www.logan-thomas.com/,+168 3798413424,"95722 Nicholson Hills Apt. 542
+New Sara, DC 64404",Lyons LLC,128-11-9517,"Confirmed transaction on card Discover
+Sandra Jones
+6011430025159917 02/30
+CVC: 975
+ for Matthew Garza.","[(89, 102, 'name'), (30, 84, 'credit_card')]"
+Angela Booth,"VISA 13 digit
+Javier Goodman
+4294520289757 10/28
+CVC: 044
+",kkelly@example.net,http://www.garza.org/,+91 6688386202,"0817 Maldonado Streets
+Jasmineburgh, IL 91460",Jones Group,391-11-0979,Verify SSN 391-11-0979 at http://www.garza.org/.,"[(26, 47, 'url'), (11, 22, 'ssn')]"
+Jodi Reynolds,"VISA 16 digit
+Nicole Moore
+4617450186711515 03/34
+CVC: 989
+",laurajackson@example.net,https://www.nelson.net/,+91 5469393861,"2367 John Ports Suite 589
+Lake Alexander, DC 45911","Charles, Martinez and Oneill",199-75-4287,"The complete report for Charles, Martinez and Oneill is available at https://wwwnelsonnet/.","[(24, 52, 'company')]"
+Rodney Moss,"Diners Club / Carte Blanche
+Stephanie Brady
+30377032550978 01/28
+CVC: 051
+",brownrobert@example.com,http://thompson-huerta.org/,+177 3860338413,"2890 Diaz Summit Apt. 945
+Lake Jaredshire, WA 80259",Lee and Sons,376-89-0292,Contact Rodney Moss at brownrobert@example.com or +177 3860338413.,"[(8, 19, 'name'), (23, 46, 'email'), (50, 65, 'phone')]"
+Christopher Sparks,"JCB 16 digit
+Kathleen Sellers
+3585873706626931 09/32
+CVC: 552
+",andrew76@example.net,http://allen.com/,+91 0526525259,"1852 Fry Track Suite 071
+New Ashley, WI 07566",Ferguson and Sons,034-28-6554,"Payment made by Christopher Sparks using card JCB 16 digit
+Kathleen Sellers
+3585873706626931 09/32
+CVC: 552
+.","[(16, 34, 'name'), (46, 108, 'credit_card')]"
+Gary Thompson,"Discover
+Ruth Ochoa
+6586645579336406 10/27
+CVC: 829
+",lisa29@example.com,https://www.ramirez.com/,+91 2276404847,"523 Justin Mill Suite 070
+Gallegosstad, AR 33759",Schaefer-Reed,300-26-3959,"The address is 523 Justin Mill Suite 070
+Gallegosstad, AR 33759.","[(15, 63, 'address')]"
+Julie Kim,"VISA 16 digit
+Janet Wheeler
+4756126252186607 09/32
+CVC: 166
+",ianlong@example.org,https://www.bolton-maxwell.biz/,+07 1107577675,"PSC 1698, Box 4692
+APO AP 02370",Robinson-Joseph,514-96-3710,SSN 514-96-3710 is required.,"[(4, 15, 'ssn')]"
+Alison Johnson,"VISA 16 digit
+Joseph Richards
+4252185357645627 11/31
+CVC: 315
+",eileen68@example.net,https://rojas-rogers.net/,+928 5161809864,"365 Nicole Gardens
+Annchester, DC 61082",Smith-Hughes,033-79-4340,"Invoice for Smith-Hughes, sent to 365 Nicole Gardens
+Annchester, DC 61082.","[(34, 73, 'address'), (12, 24, 'company')]"
+Debra Ford,"American Express
+Stephanie Mercer
+376034983994935 03/35
+CID: 1825
+",ericadunn@example.org,http://www.gonzalez.info/,+772 7781349693,"539 Taylor Mountains Suite 290
+Stephensonmouth, HI 78753",Anderson-Miles,810-61-0565,Reach out to Debra Ford regarding the Anderson-Miles audit,"[(13, 23, 'name'), (38, 52, 'company')]"
+William Newton,"VISA 16 digit
+Natalie Maddox
+4284607789280584 05/34
+CVC: 938
+",valerie96@example.org,https://www.powell.biz/,+976 0477773913,"Unit 0112 Box 9549
+DPO AE 85650","Lloyd, Miller and Wright",421-73-4150,My email is valerie96@example.org and phone is +976 0477773913.,"[(12, 33, 'email'), (47, 62, 'phone')]"
+Cynthia Joseph,"Discover
+Joseph Golden
+6575227082180838 07/34
+CVC: 578
+",brandon40@example.net,http://www.foster-jordan.com/,+70 8087477444,"9864 Lane Fort Apt. 521
+Millerbury, AR 77087","Wilson, Lynch and Campbell",835-75-9172,"Confirmed transaction on card Discover
+Joseph Golden
+6575227082180838 07/34
+CVC: 578
+ for Cynthia Joseph.","[(90, 104, 'name'), (30, 85, 'credit_card')]"
+Emily Fernandez,"Discover
+Lori Parker
+6578812833290387 08/28
+CVC: 490
+",victoria89@example.net,https://harris.com/,+876 5565509217,"2748 Matthew Passage Suite 632
+Rachelton, MA 14360","Collins, Soto and Sims",899-99-5417,Verify SSN 899-99-5417 at https://harris.com/.,"[(26, 45, 'url'), (11, 22, 'ssn')]"
+Ian Gonzalez,"VISA 16 digit
+Kellie Simpson
+4596700966488808 04/26
+CVC: 711
+",esilva@example.org,https://www.fowler-lane.com/,+91 4203568445,"9437 Christopher Roads Apt. 426
+Michaelchester, KY 26472",Holmes and Sons,642-51-4683,The complete report for Holmes and Sons is available at https://www.fowler-lane.com/.,"[(56, 84, 'url'), (24, 39, 'company')]"
+Chelsea Norman,"VISA 16 digit
+Destiny Price
+4096495765802573 10/27
+CVC: 609
+",lcole@example.org,http://www.fields.com/,+91 6276100126,"236 Herman Knoll
+West Carolynberg, RI 13014",Hunt-Richards,002-91-4967,Contact Chelsea Norman at lcole@example.org or +91 6276100126.,"[(8, 22, 'name'), (26, 43, 'email'), (47, 61, 'phone')]"
+Brian Rodriguez,"JCB 16 digit
+Jason Russell
+3576031792357074 06/26
+CVC: 976
+",williamsjoseph@example.org,http://www.lee.biz/,+36 6226540558,"19088 Doyle Junctions Apt. 019
+Samanthaside, CO 32139",Bowman LLC,602-03-5710,"Payment made by Brian Rodriguez using card JCB 16 digit
+Jason Russell
+3576031792357074 06/26
+CVC: 976
+","[(16, 31, 'name'), (43, 102, 'credit_card')]"
+Joshua Moore,"VISA 19 digit
+Tammy Rodriguez
+4073575871136353754 10/32
+CVC: 473
+",efoster@example.org,https://www.williams-clark.com/,+475 6166021924,"7590 King Skyway Suite 518
+Bobbybury, CA 96178",Sutton-Lane,517-34-3945,"The address is 7590 King Skyway Suite 518
+Bobbybury, CA 96178.","[(15, 61, 'address')]"
+Amanda Ruiz,"Maestro
+Jay Simmons
+676389594422 07/29
+CVV: 057
+",hsmith@example.com,https://brown.com/,+198 1254443323,"16706 Robert Plains
+Lake Lauraside, SC 07093",Gomez-Hood,139-28-0039,SSN 139-28-0039 is required.,"[(4, 15, 'ssn')]"
+Suzanne Andersen,"VISA 16 digit
+Victor Daugherty
+4397876167968987 05/30
+CVC: 938
+",ortizbrian@example.com,https://jones.biz/,+91 5376255223,"USNS Schmidt
+FPO AP 94183",Garcia-Clark,695-25-8086,"Invoice for Garcia-Clark, sent to USNS Schmidt
+FPO AP 94183","[(34, 59, 'address'), (12, 24, 'company')]"
+Eric Santos,"JCB 16 digit
+Marissa Morton
+3541491192216985 02/30
+CVC: 635
+",jeffreywarren@example.com,https://www.tran-cox.net/,+19 7238423255,"7778 Brooks Skyway Apt. 672
+Owensmouth, AL 65826",Wilson PLC,326-20-1494,Reach out to Eric Santos regarding the Wilson PLC audit,"[(13, 24, 'name'), (39, 49, 'company')]"
+Tony Evans,"Discover
+John Taylor
+6516049815575510 11/31
+CVC: 932
+",millerpatricia@example.com,http://smith.com/,+166 2979994465,"1312 Quinn Fork Suite 287
+Lopezville, IL 05357",Robinson Inc,285-81-3778,My email is millerpatricia@example.com and phone is +166 2979994465.,"[(12, 38, 'email'), (52, 67, 'phone')]"
+Zachary Shaw,"VISA 16 digit
+Barbara Donaldson
+4227104751513689 05/26
+CVC: 392
+",laurasanchez@example.org,http://garrison-diaz.biz/,+91 6275179016,"547 Yu Road
+Port Jennifer, NJ 12741",Costa Ltd,667-45-6628,"Confirmed transaction on card VISA 16 digit
+Barbara Donaldson
+4227104751513689 05/26
+CVC: 392
+ for Zachary Shaw","[(99, 111, 'name'), (30, 94, 'credit_card')]"
+Gabriel Becker,"VISA 13 digit
+Grant Larson
+4243626110300 09/26
+CVC: 253
+",beardjames@example.net,https://garcia.com/,+91 6155785930,"04467 Meredith Wall Suite 171
+South Edwinfort, WV 31297",Baker Group,510-78-4299,Verify SSN 510-78-4299 at https://garcia.com/.,"[(26, 45, 'url'), (11, 22, 'ssn')]"
+Michelle Jones,"Discover
+Brian Brennan
+6011682917861568 08/33
+CVC: 808
+",delacruzkendra@example.net,http://www.zamora-villa.net/,+835 5462053189,"359 Baker Trail
+Leeview, AL 87624",Martin Ltd,607-54-5254,The complete report for Martin Ltd is available at http://wwwzamora-villa.net/.,"[(24, 34, 'company')]"
+Leah Jacobs,"JCB 16 digit
+Stephen Yu
+3518546929760388 05/28
+CVC: 948
+",wmay@example.com,http://hart-sanchez.com/,+41 1839038258,"036 Natasha Track
+Simpsonmouth, TX 64465",Pratt-Rodriguez,139-12-8655,Contact Leah Jacobs at wmay@example.com or +41 1839038258.,"[(8, 19, 'name'), (23, 39, 'email'), (43, 57, 'phone')]"
+Erika Brown,"JCB 16 digit
+Nicole Harding
+3576869378020958 01/34
+CVC: 163
+",joshuamendoza@example.com,http://www.goodman-bryant.com/,+179 5660208666,"578 Daniel Ranch
+Lake Dawn, AS 20928","Tucker, Sanchez and Wilson",544-36-8301,"Payment made by Erika Brown using card JCB 16 digit
+Nicole Harding
+3576869378020958 01/34
+CVC: 163
+.","[(16, 27, 'name'), (39, 99, 'credit_card')]"
+Erika Mitchell,"American Express
+Joseph Garrison
+345472317652589 10/32
+CID: 0458
+",scott24@example.org,https://www.bass.com/,+80 4932107132,"5108 James Squares Suite 220
+Andrealand, SC 43589",Rodriguez-Hall,384-21-4096,"The address is 5108 James Squares Suite 220
+Andrealand, SC 43589.","[(15, 64, 'address')]"
+Traci Ward,"JCB 16 digit
+Rachel Hanna
+3512445953963503 12/30
+CVC: 804
+",nhorn@example.com,http://www.hunter.com/,+91 0093908433,"8568 Logan Ramp
+Smithmouth, NV 17294","Chapman, Shepherd and King",394-10-2972,SSN 394-10-2972 is required.,"[(4, 15, 'ssn')]"
+Michael Hoffman,"Discover
+Faith Campbell
+6011368875014065 07/33
+CVC: 330
+",donald32@example.net,https://huber-wright.com/,+84 6432431166,"978 Jennifer Corner
+Jensentown, PA 88602","Johnston, Brown and White",034-72-6535,"Invoice for Johnston, Brown and White, sent to 978 Jennifer Corner
+Jensentown, PA 88602","[(47, 87, 'address'), (12, 37, 'company')]"
+Donna Smith,"JCB 15 digit
+Caitlin Rodgers
+213110318339025 10/31
+CVC: 142
+",romandeanna@example.com,https://www.west.com/,+56 8424980533,"414 Johnson Alley
+South Markmouth, MP 11753",Reed PLC,480-07-4406,Reach out to Donna Smith regarding the Reed PLC audit.,"[(13, 24, 'name'), (39, 47, 'company')]"
+Ann Mccoy,"Maestro
+Richard Brown
+502027744908 06/28
+CVV: 762
+",kimberlysmith@example.org,http://www.hansen.com/,+941 5811383269,"2434 Jones Inlet
+Johnsonton, CO 75243",Burton-Daniels,732-63-5012,My email is kimberlysmith@example.org and phone is +941 5811383269.,"[(12, 37, 'email'), (51, 66, 'phone')]"
+Johnathan Patterson,"VISA 16 digit
+David Curtis
+4214784409223909 01/31
+CVC: 517
+",lisa75@example.net,http://williams.biz/,+91 7030133454,"212 Patterson Villages
+East Latoya, ME 96087",Wood-Mclaughlin,014-43-6056,"Confirmed transaction on card VISA 16 digit
+David Curtis
+4214784409223909 01/31
+CVC: 517
+ for Johnathan Patterson","[(94, 113, 'name'), (30, 89, 'credit_card')]"
+Dustin Osborne,"Mastercard
+Robert Kelley
+5124485892915318 08/33
+CVV: 699
+",brenda53@example.com,https://www.montoya-white.com/,+228 7373327416,"728 Katrina Estate Suite 182
+Micheleside, FM 73569",Turner and Sons,845-01-7042,Verify SSN 845-01-7042 at https://www.montoya-white.com/.,"[(26, 56, 'url'), (11, 22, 'ssn')]"
+William Wells,"JCB 16 digit
+Eric Rodriguez
+3541308713135835 02/31
+CVC: 127
+",leahsullivan@example.com,http://hall.com/,+802 0896272009,"5067 Martinez Curve Apt. 549
+Brianfort, OR 33722",Brown and Sons,430-31-6362,The complete report for Brown and Sons is available at http://hall.com/.,"[(55, 71, 'url'), (24, 38, 'company')]"
+David Spencer,"JCB 15 digit
+Garrett Day
+180099115142857 03/33
+CVC: 669
+",crystal27@example.org,http://www.martin.com/,+91 0569397259,"44529 Michelle Gardens
+Lake Caseyburgh, SD 96625",Mills Ltd,394-81-7583,Contact David Spencer at crystal27@example.org or +91 0569397259.,"[(8, 21, 'name'), (25, 46, 'email'), (50, 64, 'phone')]"
+Emily Todd,"VISA 16 digit
+Jessica Bright
+4668595996692764 02/33
+CVC: 852
+",david35@example.org,https://peterson.com/,+85 9541880482,"61253 Brian Prairie Suite 670
+Shahfort, SD 44112",Montoya Group,750-70-9630,"Payment made by Emily Todd using card VISA 16 digit
+Jessica Bright
+4668595996692764 02/33
+CVC: 852
+.","[(16, 26, 'name'), (38, 99, 'credit_card')]"
+Austin Ward,"American Express
+Tiffany Colon
+374941798213917 11/35
+CID: 3739
+",evansheather@example.net,http://www.scott.biz/,+91 5464738681,"91886 Cunningham Drive Apt. 390
+New Keithview, MI 45871","Weaver, Perry and Frank",377-08-0323,"The address is 91886 Cunningham Drive Apt. 390
+New Keithview, MI 45871.","[(15, 70, 'address')]"
+Nicole Johnson,"JCB 16 digit
+Paul Long
+3500699058912518 06/26
+CVC: 409
+",schmittkelsey@example.net,http://www.gibson-coleman.org/,+580 9982689616,"044 Stanley Crescent Apt. 937
+Lake Bradleyland, WY 58519",Hansen-Garcia,225-03-5909,SSN 225-03-5909 is required.,"[(4, 15, 'ssn')]"
+Terry Holland,"VISA 16 digit
+Jean Thomas
+4662595695350538 07/34
+CVC: 979
+",bakerlisa@example.org,http://clay.com/,+91 2093001222,"567 Riley Roads Apt. 031
+Alexanderburgh, ME 09450",Cole-Jackson,242-33-3790,"Invoice for Cole-Jackson, sent to 567 Riley Roads Apt. 031
+Alexanderburgh, ME 09450.","[(34, 83, 'address'), (12, 24, 'company')]"
+Kenneth Waters,"VISA 16 digit
+Richard Allen
+4715552118729464 03/35
+CVC: 898
+",christophermoss@example.com,http://morris.com/,+91 0476608304,"6461 Katelyn Fields Suite 869
+Matthewshire, CT 28224","Rush, Fox and Medina",347-30-0649,"Reach out to Kenneth Waters regarding the Rush, Fox and Medina audit.","[(13, 27, 'name'), (42, 62, 'company')]"
+Laura Bishop,"VISA 16 digit
+Hunter Alexander
+4406587179728603 12/29
+CVC: 095
+",jennifergarcia@example.com,https://www.hall-hernandez.com/,+03 3793483286,"000 Mark Squares
+Port Donnafurt, PA 67970",Johnson-Frye,551-81-3335,My email is jennifergarcia@example.com and phone is +03 3793483286.,"[(12, 38, 'email'), (52, 66, 'phone')]"
+Debra Dean,"VISA 16 digit
+Christine Chase
+4677272387866766 01/27
+CVC: 283
+",carolbishop@example.org,http://boyd-cantu.com/,+603 8802804439,"7532 Robert Pine Suite 875
+Lake Kevinport, PA 99355",Pugh-Haynes,800-49-9048,"Confirmed transaction on card VISA 16 digit
+Christine Chase
+4677272387866766 01/27
+CVC: 283
+ for Debra Dean","[(97, 107, 'name'), (30, 92, 'credit_card')]"
+Michael Garcia,"VISA 16 digit
+Julia Ramsey
+4912094677831994 04/30
+CVC: 280
+",cassandrataylor@example.net,http://www.chang.com/,+80 9259591987,"63232 Lam Fork Suite 516
+New John, GA 64122",Miller Ltd,601-33-3886,Verify SSN 601-33-3886 at http://wwwchangcom/,"[(11, 22, 'ssn')]"
+Mckenzie Forbes,"VISA 16 digit
+Michael Steele
+4844021588611747 12/27
+CVC: 841
+",ljennings@example.net,https://dean.com/,+293 4213719179,"35584 Patrick Inlet
+Lake Randy, ID 59318",Clarke-Garcia,334-95-3254,The complete report for Clarke-Garcia is available at https://deancom/.,"[(24, 37, 'company')]"
+Mark Powell,"Diners Club / Carte Blanche
+Kelly Gibson
+30550806371421 12/25
+CVC: 351
+",sbond@example.com,https://howard-mcconnell.org/,+06 3576739913,"47939 Shannon Lights
+East Danielle, VT 23373","Sullivan, Page and Hoffman",015-32-7386,Contact Mark Powell at sbond@examplecom or +06 3576739913.,"[(8, 19, 'name'), (43, 57, 'phone')]"
+Angela Mccormick,"VISA 19 digit
+Brent Paul
+4224510132377175704 12/27
+CVC: 469
+",hsilva@example.org,https://hart.net/,+011 2493652207,"Unit 3321 Box 7081
+DPO AA 04981",Carr-Lee,041-98-4566,"Payment made by Angela Mccormick using card VISA 19 digit
+Brent Paul
+4224510132377175704 12/27
+CVC: 469
+","[(16, 32, 'name'), (44, 104, 'credit_card')]"
+Robert Mckinney,"Mastercard
+Christine Rangel
+5435595653830052 09/27
+CVV: 516
+",shawn62@example.com,https://white-beck.info/,+91 3666435513,"92409 Jesus Island
+New Kimberlyberg, CO 20526","Holmes, Case and Taylor",292-44-9784,"The address is 92409 Jesus Island
+New Kimberlyberg, CO 20526.","[(15, 60, 'address')]"
+Joseph Nash,"VISA 19 digit
+Damon Barrera
+4926587391849433798 04/26
+CVC: 522
+",christinaking@example.net,https://tanner.org/,+85 0208297176,"018 Cross Estate
+North Jeff, PA 35202",Smith-Castro,866-44-0903,SSN 866-44-0903 is required,"[(4, 15, 'ssn')]"
+Jessica Hernandez,"Maestro
+Jordan Young
+581191256105 06/30
+CVV: 092
+",branditucker@example.com,https://www.boyd.info/,+91 3532929083,"521 Victoria Center
+Howardmouth, VI 90562",Fisher-Andrade,187-57-0682,"Invoice for Fisher-Andrade, sent to 521 Victoria Center
+Howardmouth, VI 90562.","[(36, 77, 'address'), (12, 26, 'company')]"
+Madeline Tyler,"Discover
+Timothy Hall
+6011440559599156 01/33
+CVC: 762
+",hmiller@example.net,http://www.barnes.org/,+06 7891325915,"680 Sanchez Falls Apt. 857
+New Bryanton, VI 91148",Jones-Gaines,883-13-6202,Reach out to Madeline Tyler regarding the Jones-Gaines audit.,"[(13, 27, 'name'), (42, 54, 'company')]"
+Kelly Goodman,"VISA 19 digit
+Nicholas Jones
+4193550430453855167 03/31
+CVC: 152
+",steven37@example.net,http://www.mills.com/,+91 7915316789,"04842 Michael Spur Suite 316
+New Aaronview, PR 16405","Blanchard, Turner and Acosta",096-38-5518,My email is steven37@examplenet and phone is +91 7915316789.,"[(45, 59, 'phone')]"
+Sara Edwards,"Diners Club / Carte Blanche
+Rachael Rios
+30234212586449 10/33
+CVC: 430
+",uvaldez@example.net,https://leach.info/,+17 8289605010,"123 Ryan Rue
+Lake Craig, NM 99591",Buchanan Group,500-82-8615,"Confirmed transaction on card Diners Club / Carte Blanche
+Rachael Rios
+30234212586449 10/33
+CVC: 430
+ for Sara Edwards","[(106, 118, 'name'), (30, 101, 'credit_card')]"
+Sabrina Norton,"VISA 16 digit
+Justin Saunders
+4387292125176147 07/31
+CVC: 971
+",lisa42@example.net,http://stewart-bullock.net/,+386 1067402704,"220 Paula Ramp Apt. 337
+Hernandezfurt, MS 87981","Castillo, Duke and Leach",075-39-5979,Verify SSN 075-39-5979 at http://stewart-bullocknet/.,"[(11, 22, 'ssn')]"
+David Rivera,"Mastercard
+Cheryl Boyle
+2244032930331348 02/30
+CVV: 781
+",williamsroger@example.org,https://www.wiley.com/,+98 9681532520,"2350 Walters Cliffs Apt. 513
+Henryfurt, NC 50378","Thomas, Saunders and Thompson",274-89-5057,"The complete report for Thomas, Saunders and Thompson is available at https://www.wiley.com/.","[(70, 92, 'url'), (24, 53, 'company')]"
+Victoria Hayden,"JCB 16 digit
+Karen Moon
+3540401211307559 02/26
+CVC: 492
+",jhernandez@example.org,https://www.west-daniels.info/,+91 5362435785,"0858 Tiffany Wells
+Delgadoburgh, MH 06894","Adams, Brown and Ali",190-03-7946,Contact Victoria Hayden at jhernandez@exampleorg or +91 5362435785,"[(8, 23, 'name'), (52, 66, 'phone')]"
+Jason Maddox,"JCB 16 digit
+Jeffrey Whitehead
+3569506078849968 01/33
+CVC: 097
+",ileonard@example.com,https://mason-mendoza.com/,+91 7873872402,"9843 Kyle Tunnel
+Rhodesview, AR 16646",Stark Group,316-73-9213,"Payment made by Jason Maddox using card JCB 16 digit
+Jeffrey Whitehead
+3569506078849968 01/33
+CVC: 097
+","[(16, 28, 'name'), (40, 103, 'credit_card')]"
+Scott Holmes,"JCB 16 digit
+Brian Stout
+3589599829734429 12/25
+CVC: 561
+",walterwise@example.com,http://www.adams.com/,+842 8042669236,"18871 Hanson Loop Suite 442
+Lake Julie, FM 53928",Powers Ltd,775-10-1012,"The address is 18871 Hanson Loop Suite 442
+Lake Julie, FM 53928","[(15, 63, 'address')]"
+Mr. Justin Obrien,"JCB 16 digit
+John Rasmussen
+3535064274703432 07/35
+CVC: 164
+",richardsjacob@example.net,http://www.hernandez.com/,+91 3305207267,"Unit 4375 Box 2638
+DPO AP 77569","Cannon, Reynolds and Carpenter",598-76-8083,SSN 598-76-8083 is required.,"[(4, 15, 'ssn')]"
+Wyatt Robles,"VISA 16 digit
+Deborah Vargas
+4313890969945888 10/34
+CVC: 430
+",edavis@example.net,https://www.gardner.com/,+72 3989854848,"Unit 0278 Box 0788
+DPO AA 49081",Phillips LLC,184-02-7634,"Invoice for Phillips LLC, sent to Unit 0278 Box 0788
+DPO AA 49081.","[(34, 65, 'address'), (12, 24, 'company')]"
+Jennifer Wheeler,"VISA 13 digit
+Victor Rice
+4586624380873 10/30
+CVC: 062
+",robertvaldez@example.com,https://griffin.biz/,+05 0783596872,"61800 Sarah Forge Apt. 804
+Deborahfurt, GU 61342","Davis, Armstrong and Smith",715-24-4249,"Reach out to Jennifer Wheeler regarding the Davis, Armstrong and Smith audit.","[(13, 29, 'name'), (44, 70, 'company')]"
+Michelle Riley,"JCB 16 digit
+Charles Stark
+3568366007532032 10/31
+CVC: 144
+",jonesdavid@example.org,https://hill-reynolds.com/,+68 5833169297,"748 William Locks
+Angelaborough, MO 62176","Sharp, Bradford and Chen",696-37-8101,My email is jonesdavid@exampleorg and phone is +68 5833169297.,"[(47, 61, 'phone')]"
+William Graham,"JCB 16 digit
+Alicia Hurst
+3536286042996852 08/33
+CVC: 579
+",lauren88@example.com,https://alexander-ramirez.com/,+91 9950339996,"338 Jeffrey Centers Suite 988
+East Michelle, FL 22679",Mccullough-Patrick,680-52-6417,"Confirmed transaction on card JCB 16 digit
+Alicia Hurst
+3536286042996852 08/33
+CVC: 579
+ for William Graham","[(93, 107, 'name'), (30, 88, 'credit_card')]"
+Mrs. Brenda Hawkins,"JCB 16 digit
+Chloe Ramirez
+3500541376695187 08/31
+CVC: 675
+",williamsjeff@example.org,http://king.net/,+91 9322342959,"887 Jennifer Harbor
+Rhodeston, PA 37375",Wright LLC,526-16-8332,Verify SSN 526-16-8332 at http://king.net/.,"[(26, 42, 'url'), (11, 22, 'ssn')]"
+Beth Williams,"American Express
+Barbara Howell
+379320223952230 01/32
+CID: 4873
+",mooreheather@example.net,https://www.davis.com/,+91 7841287890,"64996 John Mall
+West Joshuaton, PR 81945","Hall, Jacobs and Solis",083-42-2818,"The complete report for Hall, Jacobs and Solis is available at https://wwwdavis.com/.","[(24, 46, 'company')]"
+Scott Hayes,"JCB 15 digit
+Stephen Navarro
+213166513953051 10/30
+CVC: 298
+",stephanie53@example.org,http://www.perez-boyle.com/,+69 7284908009,"8663 Watts Ridge Suite 820
+Lake Cindy, OR 60914",Johnson-Peterson,764-92-5228,Contact Scott Hayes at stephanie53@example.org or +69 7284908009.,"[(8, 19, 'name'), (23, 46, 'email'), (50, 64, 'phone')]"
+Nicole Thomas,"American Express
+Karen Rodgers
+377040634566757 01/34
+CID: 6893
+",blakeblackwell@example.com,https://harper.com/,+178 4802823886,"4691 Obrien Islands Apt. 869
+Greenfort, SC 93670","Estrada, Stanton and Vasquez",612-33-9956,"Payment made by Nicole Thomas using card American Express
+Karen Rodgers
+377040634566757 01/34
+CID: 6893
+","[(16, 29, 'name'), (41, 104, 'credit_card')]"
+Kenneth Ramsey,"Diners Club / Carte Blanche
+Daniel Ellis
+30439008458162 10/29
+CVC: 211
+",cruzalex@example.com,https://potter.org/,+599 5788458820,"1928 Jeffrey Stravenue Suite 203
+North Scott, GU 30537",Kim PLC,131-08-8500,"The address is 1928 Jeffrey Stravenue Suite 203
+North Scott, GU 30537","[(15, 69, 'address')]"
+Steven West DVM,"JCB 16 digit
+Frank Huber
+3524694680740827 12/29
+CVC: 755
+",tmorgan@example.com,https://berry.net/,+420 6295342352,"116 Smith Corners
+Floydton, PW 31140","Blackwell, Thomas and Osborne",536-72-2544,SSN 536-72-2544 is required,"[(4, 15, 'ssn')]"
+Misty Henderson MD,"VISA 19 digit
+Jonathan Powers
+4459655214582824180 04/31
+CVC: 039
+",hgood@example.net,http://kim.com/,+91 6340660009,"USNS Erickson
+FPO AP 45305",Miller-Baker,733-55-8119,"Invoice for Miller-Baker, sent to USNS Erickson
+FPO AP 45305","[(34, 60, 'address'), (12, 24, 'company')]"
+Frank White,"VISA 16 digit
+Michelle Turner
+4635028911944870 02/26
+CVC: 174
+",tkeith@example.com,https://mahoney.info/,+91 2505059539,"0092 Toni Path
+Annport, NY 90667",Morris-Smith,466-45-9922,Reach out to Frank White regarding the Morris-Smith audit.,"[(13, 24, 'name'), (39, 51, 'company')]"
+Cassandra Lewis,"JCB 15 digit
+Charles Summers
+180002050941374 01/27
+CVC: 518
+",coledeborah@example.com,http://www.dunn-taylor.com/,+241 8642558613,"307 Martinez Spurs
+West Stacieborough, MN 44581","Kelley, Carr and Hill",200-06-6663,My email is coledeborah@example.com and phone is +241 8642558613.,"[(12, 35, 'email'), (49, 64, 'phone')]"
+Ronald Henry,"VISA 16 digit
+Karen Duncan
+4940248243000395 12/30
+CVC: 682
+",mullensylvia@example.com,https://www.smith.info/,+41 8395955482,"879 Nathan Port
+Lake Bradyton, NE 08145",Rodriguez-Mendoza,701-03-4919,"Confirmed transaction on card VISA 16 digit
+Karen Duncan
+4940248243000395 12/30
+CVC: 682
+ for Ronald Henry.","[(94, 106, 'name'), (30, 89, 'credit_card')]"
+Victor Walker,"JCB 16 digit
+Alexander Castillo
+3588880067752591 07/35
+CVC: 158
+",nsmith@example.net,https://www.taylor-ramos.com/,+91 6195558620,"3289 Amy Villages Suite 325
+Watersstad, GU 42066",Miller-Gonzalez,627-97-9650,Verify SSN 627-97-9650 at https://wwwtaylor-ramoscom/,"[(11, 22, 'ssn')]"
+Melinda Schultz,"JCB 15 digit
+Theresa Hughes
+180054006487564 05/34
+CVC: 099
+",margarethughes@example.org,https://caldwell-adams.com/,+91 1544338011,"95943 Weber Manors Suite 628
+North Chad, VA 76805","Harvey, Griffith and Johnson",588-39-7436,"The complete report for Harvey, Griffith and Johnson is available at https://caldwell-adams.com/.","[(69, 96, 'url'), (24, 52, 'company')]"
+Jose Hutchinson,"JCB 15 digit
+Shannon Murphy
+180088856964710 05/34
+CVC: 638
+",brett43@example.net,https://brown-foster.com/,+086 3404023282,"01411 Samuel Springs Suite 216
+East Jean, PR 34470","Hanson, Brown and Mitchell",498-84-0162,Contact Jose Hutchinson at brett43@example.net or +086 3404023282.,"[(8, 23, 'name'), (27, 46, 'email'), (50, 65, 'phone')]"
+Linda Baker,"JCB 15 digit
+Lisa Goodwin
+213140782082132 04/32
+CVC: 931
+",wrightjustin@example.org,https://www.pham.com/,+28 9946960416,"496 Williams Island Suite 975
+Berrystad, NJ 93422",Valencia-Foster,693-43-0948,"Payment made by Linda Baker using card JCB 15 digit
+Lisa Goodwin
+213140782082132 04/32
+CVC: 931
+.","[(16, 27, 'name'), (39, 96, 'credit_card')]"
+Erica Scott,"JCB 16 digit
+Rachael Harrison
+3521944884238406 09/26
+CVC: 503
+",lauraschroeder@example.org,https://williams-harris.com/,+68 8351173329,"PSC 0967, Box 4355
+APO AP 11646","Ross, Williams and Green",166-83-9377,"The address is PSC 0967, Box 4355
+APO AP 11646","[(15, 46, 'address')]"
+Brandon Johnson,"JCB 16 digit
+Michelle Andrews
+3507855276544268 01/27
+CVC: 978
+",jasonmoore@example.net,https://www.schneider-donaldson.com/,+36 1387047753,"15526 Christine Summit
+Wilkinsonport, ME 58319",Graham-White,379-37-6949,SSN 379-37-6949 is required.,"[(4, 15, 'ssn')]"
+Luke Martin,"JCB 16 digit
+Michael Chen
+3564629091332070 10/30
+CVC: 500
+",johngray@example.net,http://www.ross.net/,+91 0488139917,"572 Foster Keys Suite 615
+Changstad, PA 46175",King-Jones,546-99-5210,"Invoice for King-Jones, sent to 572 Foster Keys Suite 615
+Changstad, PA 46175","[(32, 77, 'address'), (12, 22, 'company')]"
+Alexis Armstrong,"Diners Club / Carte Blanche
+Katherine Hahn
+30370169115103 04/34
+CVC: 505
+",qbarnes@example.net,http://www.taylor-martinez.com/,+88 4769326360,"5757 Johnson Rest
+Port Angela, AK 77827",Yates-Tran,864-49-6840,Reach out to Alexis Armstrong regarding the Yates-Tran audit.,"[(13, 29, 'name'), (44, 54, 'company')]"
+William Ramos,"Discover
+Reginald Mcpherson
+6501321154145271 09/29
+CVC: 708
+",karen00@example.com,http://www.holden-brown.biz/,+093 9751468871,"8076 Joel Road Suite 748
+West Jenniferton, PR 06592",Gillespie Ltd,401-14-6967,My email is karen00@examplecom and phone is +093 9751468871,"[(44, 59, 'phone')]"
+Kristin Price,"VISA 19 digit
+Robert Finley
+4657406883812421529 12/29
+CVC: 497
+",dunderwood@example.com,http://schwartz-anderson.com/,+91 0941078509,"65699 Hernandez Turnpike Suite 121
+Dawsontown, KS 93743","Mcdowell, Yoder and Meyer",454-95-4690,"Confirmed transaction on card VISA 19 digit
+Robert Finley
+4657406883812421529 12/29
+CVC: 497
+ for Kristin Price","[(98, 111, 'name'), (30, 93, 'credit_card')]"
+Bonnie Taylor,"Mastercard
+Lindsay Harrison
+5475766188614151 03/28
+CVV: 293
+",mponce@example.net,https://santos.com/,+27 7211368471,"04990 Howe Groves
+Port Lisamouth, WI 51279","Lucas, Alvarado and Holt",899-13-0251,Verify SSN 899-13-0251 at https://santoscom/.,"[(11, 22, 'ssn')]"
+Carlos Mcgee,"VISA 13 digit
+David Fernandez
+4694168775621 08/26
+CVC: 086
+",osmith@example.net,https://mason-valdez.com/,+91 5501691010,"570 Bryant Extension Apt. 922
+Scottland, KY 36217","Martin, Price and Hopkins",055-89-2861,"The complete report for Martin, Price and Hopkins is available at https://mason-valdez.com/.","[(66, 91, 'url'), (24, 49, 'company')]"
+Justin Cole,"Diners Club / Carte Blanche
+Matthew Carter
+30221642038109 07/30
+CVC: 459
+",shelly36@example.com,http://www.huff.com/,+647 8621254238,"3184 Jason Mall Apt. 899
+North Maria, SD 58358",Gonzalez LLC,711-21-6726,Contact Justin Cole at shelly36@example.com or +647 8621254238.,"[(8, 19, 'name'), (23, 43, 'email'), (47, 62, 'phone')]"
+Stanley Jones,"VISA 16 digit
+Lisa Bowers
+4272998470892967 07/35
+CVC: 576
+",jcastillo@example.org,https://jones.org/,+89 5037501581,"555 Nicholas Overpass
+East John, WV 08796",Sanders PLC,383-81-3280,"Payment made by Stanley Jones using card VISA 16 digit
+Lisa Bowers
+4272998470892967 07/35
+CVC: 576
+.","[(16, 29, 'name'), (41, 99, 'credit_card')]"
+Marie Taylor,"Maestro
+Angela Freeman
+676134749768 12/26
+CVV: 967
+",maldonadojay@example.net,http://www.robinson.com/,+91 9887740304,"02309 Ellis Village
+Simpsonside, NV 48420",Lopez Inc,380-58-0275,"The address is 02309 Ellis Village
+Simpsonside, NV 48420.","[(15, 56, 'address')]"
+Brandon Aguilar,"JCB 15 digit
+Pamela Kaiser
+180006364577519 09/35
+CVC: 198
+",houstonteresa@example.net,https://jones.com/,+91 5941072362,"9423 Cortez Mountain
+New Alyssa, OK 68352",Bates-Parker,083-23-3651,SSN 083-23-3651 is required.,"[(4, 15, 'ssn')]"
+Allison Daugherty,"VISA 16 digit
+Brian Gaines
+4460237341598913 05/34
+CVC: 849
+",amy80@example.com,https://stewart.net/,+47 3983000120,"058 Bowman Inlet Apt. 867
+Rosarioview, CO 32310",Cox-Miranda,047-13-0011,"Invoice for Cox-Miranda, sent to 058 Bowman Inlet Apt. 867
+Rosarioview, CO 32310.","[(33, 80, 'address'), (12, 23, 'company')]"
+Michelle Kelly,"JCB 16 digit
+Glenn Perkins
+3541420522556299 10/32
+CVC: 277
+",nmaldonado@example.net,http://www.cuevas.net/,+182 6741645899,"7957 Henry Roads
+Hansenfort, HI 50887",Kelly Inc,695-42-2959,Reach out to Michelle Kelly regarding the Kelly Inc audit.,"[(13, 27, 'name'), (42, 51, 'company')]"
+Brenda Diaz,"American Express
+Timothy Clark
+348036928546154 06/30
+CID: 4463
+",amberherman@example.org,http://murphy.com/,+17 3643489658,"2765 Benjamin Turnpike
+East Kaitlynstad, MP 40244","Pineda, Barajas and Phillips",038-05-9299,My email is amberherman@example.org and phone is +17 3643489658.,"[(12, 35, 'email'), (49, 63, 'phone')]"
+Daniel Wyatt,"JCB 15 digit
+Susan Smith
+213161712903254 09/32
+CVC: 670
+",nevans@example.org,http://warner-rhodes.info/,+91 9847098368,"810 Phillips Cove
+Port Karaborough, OK 55166",Yang-Scott,032-77-1154,"Confirmed transaction on card JCB 15 digit
+Susan Smith
+213161712903254 09/32
+CVC: 670
+ for Daniel Wyatt","[(91, 103, 'name'), (30, 86, 'credit_card')]"
+Joseph Henry,"VISA 19 digit
+Victor Smith
+4959767906605559107 03/27
+CVC: 626
+",jonathanmontes@example.com,http://pham.net/,+47 3527205323,"11900 Amber Port
+Erinside, FM 27260",Jackson Group,750-10-2888,Verify SSN 750-10-2888 at http://phamnet/,"[(11, 22, 'ssn')]"
+Karen Bentley,"VISA 16 digit
+Christian Soto
+4123413856155485 09/34
+CVC: 640
+",bradley58@example.com,http://www.smith-singh.com/,+91 7065698990,"50276 Jimenez Lights Apt. 549
+Lake Kellyborough, FL 30205",Ramsey-Williams,512-99-3164,The complete report for Ramsey-Williams is available at http://www.smith-singh.com/.,"[(56, 83, 'url'), (24, 39, 'company')]"
+Mr. Karl Guzman,"VISA 16 digit
+Daniel Hill
+4408049689276951 03/28
+CVC: 017
+",butlerjoseph@example.com,http://www.brown.com/,+91 8761388580,"817 Vasquez Summit
+Troyville, GA 56117",Valentine-Sparks,015-57-5726,Contact Mr Karl Guzman at butlerjoseph@examplecom or +91 8761388580.,"[(53, 67, 'phone')]"
+Michael Williams,"VISA 13 digit
+Gabriel Hicks
+4274638364429 02/34
+CVC: 479
+",kathleennorris@example.com,http://smith.net/,+67 6008890093,"48383 Armstrong Streets
+Chavezstad, MN 47799",Miller PLC,854-14-8495,"Payment made by Michael Williams using card VISA 13 digit
+Gabriel Hicks
+4274638364429 02/34
+CVC: 479
+","[(16, 32, 'name'), (44, 101, 'credit_card')]"
+Nicholas Campos,"VISA 13 digit
+Samantha Fitzgerald
+4874534250620 03/34
+CVC: 949
+",amartinez@example.com,https://moore-walton.net/,+56 1741219454,"00901 Wyatt Extensions
+North Saramouth, MO 39638","Johnson, Hartman and Anderson",380-90-0288,"The address is 00901 Wyatt Extensions
+North Saramouth, MO 39638","[(15, 63, 'address')]"
+Courtney Mccarthy,"JCB 16 digit
+Haley Johnson
+3527088031056040 03/31
+CVC: 557
+",jaredsmith@example.org,https://shelton-bates.biz/,+20 9070447869,"66793 Nicholas Harbor
+New Carla, WY 26211",Juarez-Guerrero,837-26-5346,SSN 837-26-5346 is required.,"[(4, 15, 'ssn')]"
+Keith Hayes,"JCB 16 digit
+Kimberly Sullivan
+3596110138953238 08/34
+CVC: 470
+",whiteheadkelly@example.org,https://www.gibson.com/,+91 2537858501,"USNV Gonzalez
+FPO AE 27910",Johnson Ltd,876-65-8624,"Invoice for Johnson Ltd, sent to USNV Gonzalez
+FPO AE 27910.","[(33, 59, 'address'), (12, 23, 'company')]"
+Sheri Fletcher,"JCB 16 digit
+Emily Walker
+3558026776851656 12/31
+CVC: 116
+",madison66@example.org,https://www.cooper-atkinson.com/,+91 0290784189,"35528 Duarte Groves
+Vasquezside, UT 50005","Johnston, Ruiz and Martinez",212-27-2733,"Reach out to Sheri Fletcher regarding the Johnston, Ruiz and Martinez audit","[(13, 27, 'name'), (42, 69, 'company')]"
+Gregory Quinn,"Maestro
+Stephanie Johnson
+676183834636 03/31
+CVV: 383
+",andreaklein@example.org,https://www.chung-howard.net/,+34 5321543986,"50224 Manning Track
+Klineborough, NY 51740",Liu and Sons,502-12-4195,My email is andreaklein@example.org and phone is +34 5321543986.,"[(12, 35, 'email'), (49, 63, 'phone')]"
+Daniel Buchanan,"JCB 15 digit
+Kristy Porter
+180009578937719 01/33
+CVC: 180
+",lisa64@example.net,http://www.ford.com/,+965 4321969067,"4359 Shane Glen
+Trevormouth, OH 26766","Simmons, Li and Ho",837-45-0867,"Confirmed transaction on card JCB 15 digit
+Kristy Porter
+180009578937719 01/33
+CVC: 180
+ for Daniel Buchanan","[(93, 108, 'name'), (30, 88, 'credit_card')]"
+Raven May,"Diners Club / Carte Blanche
+Amy Wood
+30455976017368 05/33
+CVC: 315
+",darin88@example.org,https://gilbert.com/,+91 9243869294,"6225 Martinez Radial Apt. 391
+Dunnville, SD 63082","Benitez, Alvarez and Walters",593-33-4182,Verify SSN 593-33-4182 at https://gilbertcom/.,"[(11, 22, 'ssn')]"
+Michelle Dominguez,"JCB 16 digit
+Alyssa Gibson
+3556498680791975 09/32
+CVC: 552
+",nbrown@example.org,http://www.lowe-brown.biz/,+808 5570735726,"1780 Hughes Meadow Apt. 327
+Petersenfort, MT 64399",Hanson-Lambert,663-74-9633,The complete report for Hanson-Lambert is available at http://wwwlowe-brownbiz/.,"[(24, 38, 'company')]"
+Vanessa Rivera,"Diners Club / Carte Blanche
+Brian Berry
+30533817729449 08/30
+CVC: 916
+",dhunt@example.com,http://morgan.com/,+930 7356559533,"766 Simpson Forge
+East Coreyside, DC 70241",Hunt Inc,483-31-6210,Contact Vanessa Rivera at dhunt@example.com or +930 7356559533.,"[(8, 22, 'name'), (26, 43, 'email'), (47, 62, 'phone')]"
+Catherine Nguyen,"VISA 16 digit
+Nicholas Bush
+4441417235289456 05/29
+CVC: 108
+",kimberly71@example.com,https://morgan-weber.net/,+05 5386578783,"602 Kerr Passage Suite 986
+North Calvin, FM 50263",Hogan LLC,311-28-4905,"Payment made by Catherine Nguyen using card VISA 16 digit
+Nicholas Bush
+4441417235289456 05/29
+CVC: 108
+.","[(16, 32, 'name'), (44, 104, 'credit_card')]"
+Teresa Randall,"JCB 16 digit
+Heather Smith
+3510548673949595 12/31
+CVC: 610
+",qbrooks@example.org,http://moses.com/,+071 7791098722,"12002 Reid Cliffs
+Lesliestad, OK 44113","Patton, Campbell and Mendoza",221-61-5842,"The address is 12002 Reid Cliffs
+Lesliestad, OK 44113.","[(15, 53, 'address')]"
+David Thompson,"JCB 16 digit
+Debra Reynolds
+3555601302437213 09/33
+CVC: 721
+",calebjohnson@example.org,https://www.harrison-mendoza.com/,+85 5071933702,"5742 Alexander Knolls
+Smithborough, VT 05983",Bradley-Dunlap,730-98-1102,SSN 730-98-1102 is required.,"[(4, 15, 'ssn')]"
+Michael Crawford,"Discover
+Stephanie Deleon
+6011746770071621 09/35
+CVC: 776
+",matthewsjerry@example.net,http://www.fitzpatrick.net/,+83 9465167219,"698 Wendy Circles Suite 057
+Port Jason, DE 70455",Werner-Wyatt,049-36-4344,"Invoice for Werner-Wyatt, sent to 698 Wendy Circles Suite 057
+Port Jason, DE 70455.","[(34, 82, 'address'), (12, 24, 'company')]"
+Kristen Clements,"JCB 15 digit
+Alyssa Patrick
+180052272452791 10/27
+CVC: 401
+",collinssharon@example.net,https://woods.com/,+528 1501496151,"5084 Bruce Cliff
+North David, OK 16477","Graham, Castro and Mcgee",846-80-9294,"Reach out to Kristen Clements regarding the Graham, Castro and Mcgee audit.","[(13, 29, 'name'), (44, 68, 'company')]"
+Hannah Rice,"Mastercard
+Jason Roman
+2270070471079642 08/30
+CVV: 574
+",xstevens@example.com,http://www.smith.com/,+91 1858870855,"USNV Willis
+FPO AA 64162",Moore-Watts,698-29-9847,My email is xstevens@examplecom and phone is +91 1858870855,"[(45, 59, 'phone')]"
+Daniel Sanders,"Discover
+Leonard Lopez
+6561115942121215 10/33
+CVC: 071
+",dianehall@example.com,http://henderson.net/,+01 1149459315,"9814 Waters Harbors
+Ericamouth, ID 61507","Wolfe, Taylor and Johnson",485-29-0384,"Confirmed transaction on card Discover
+Leonard Lopez
+6561115942121215 10/33
+CVC: 071
+ for Daniel Sanders.","[(90, 104, 'name'), (30, 85, 'credit_card')]"
+Jeremy Cooper,"Maestro
+Jessica Thompson
+675917710526 11/30
+CVV: 425
+",charlesarroyo@example.net,https://may.com/,+83 6268509609,"322 Mclaughlin Club
+Lauraview, RI 30909","Price, Howell and Pearson",588-28-2239,Verify SSN 588-28-2239 at https://may.com/.,"[(26, 42, 'url'), (11, 22, 'ssn')]"
+Tyler Koch,"American Express
+Darlene Decker
+375126768195307 10/27
+CID: 9386
+",andrewsmith@example.net,https://www.lamb.com/,+38 4837453657,"098 Dawn Squares
+New Jason, AR 10912","Byrd, Ware and Gonzalez",184-71-1153,"The complete report for Byrd, Ware and Gonzalez is available at https://www.lamb.com/.","[(64, 85, 'url'), (24, 47, 'company')]"
+Ronald Lopez,"Discover
+Jodi Stephenson
+6556906975955421 09/32
+CVC: 157
+",eyoung@example.org,https://www.ferguson.com/,+06 8424437860,"554 Kimberly Dale Suite 580
+New John, MN 46148",Wilcox-Keller,473-35-2703,Contact Ronald Lopez at eyoung@exampleorg or +06 8424437860,"[(8, 20, 'name'), (45, 59, 'phone')]"
+Stephanie Hubbard,"VISA 16 digit
+Rachel Rosales
+4188584677427444 06/35
+CVC: 040
+",davidmalone@example.com,https://lewis-wilson.com/,+91 2177565157,"38257 Allen Ranch Suite 085
+Denniston, IA 64284","Scott, Khan and Ross",079-65-0600,"Payment made by Stephanie Hubbard using card VISA 16 digit
+Rachel Rosales
+4188584677427444 06/35
+CVC: 040
+","[(16, 33, 'name'), (45, 106, 'credit_card')]"
+Kristine Phillips,"Discover
+Lindsey Day
+6547453533827364 02/29
+CVC: 407
+",pauldeleon@example.com,https://hernandez.com/,+13 8473789597,"88809 Price Hollow Apt. 102
+Susanfurt, MO 63743",Henry-Dunn,450-79-1575,"The address is 88809 Price Hollow Apt. 102
+Susanfurt, MO 63743.","[(15, 62, 'address')]"
+Mrs. Hannah Garrett,"VISA 19 digit
+Natalie Richmond
+4131087850903348004 06/30
+CVC: 802
+",stephanie93@example.com,https://hays.com/,+07 8817732554,"1624 Thomas Lodge
+Caseyton, MD 07519",James Ltd,557-86-2845,SSN 557-86-2845 is required.,"[(4, 15, 'ssn')]"
+Kristin Miller,"Discover
+Shawn Hess
+6594098079725779 04/34
+CVC: 610
+",robert16@example.org,https://www.benson.org/,+521 1610347236,"12093 John Gateway
+New Rhonda, IA 26488","Mitchell, Wright and Sherman",087-31-4132,"Invoice for Mitchell, Wright and Sherman, sent to 12093 John Gateway
+New Rhonda, IA 26488.","[(50, 89, 'address'), (12, 40, 'company')]"
+Kristina Dawson,"Mastercard
+Jermaine Trujillo
+2263752492479633 11/28
+CVV: 686
+",proberson@example.net,https://mclaughlin.org/,+64 0602019465,"6951 Dalton Plain
+West Tonyside, NY 77420",Lewis and Sons,786-82-8438,Reach out to Kristina Dawson regarding the Lewis and Sons audit.,"[(13, 28, 'name'), (43, 57, 'company')]"
+Susan Owens,"VISA 16 digit
+Amanda Adams
+4578738053180484 12/26
+CVC: 168
+",charlesmccall@example.com,https://shepherd.com/,+91 7973863765,"8076 Jones Grove
+Port Tracyberg, OK 07599",Mccormick-Zamora,355-42-3747,My email is charlesmccall@example.com and phone is +91 7973863765.,"[(12, 37, 'email'), (51, 65, 'phone')]"
+Jo Gonzalez,"Maestro
+David Gomez
+676238897950 06/34
+CVV: 029
+",hollowaysarah@example.com,http://www.cooper-floyd.com/,+64 1802308787,"748 Mosley Ports Apt. 491
+North Shaunmouth, IL 25268",Butler-Bass,498-75-3237,"Confirmed transaction on card Maestro
+David Gomez
+676238897950 06/34
+CVV: 029
+ for Jo Gonzalez.","[(83, 94, 'name'), (30, 78, 'credit_card')]"
+Gregory Ferguson,"VISA 19 digit
+Jennifer Miller
+4950212962504851194 11/27
+CVC: 247
+",karen81@example.net,https://www.nunez-watson.org/,+91 8016006432,"Unit 5599 Box 9121
+DPO AP 55414",Patterson Group,152-96-2049,Verify SSN 152-96-2049 at https://www.nunez-watson.org/.,"[(26, 55, 'url'), (11, 22, 'ssn')]"
+Joshua Mack,"JCB 16 digit
+Jennifer Butler
+3590485840931649 12/26
+CVC: 517
+",harrisjustin@example.org,https://young-scott.com/,+95 1035637815,"7518 Alyssa Meadows
+Shirleymouth, MD 36867",Delgado Inc,692-59-0688,The complete report for Delgado Inc is available at https://young-scott.com/.,"[(52, 76, 'url'), (24, 35, 'company')]"
+David Leonard,"JCB 16 digit
+Jasmine Wolfe
+3581121847628273 12/29
+CVC: 345
+",pwillis@example.net,https://www.stephenson.com/,+91 0099795140,"865 Sheryl Track Suite 107
+West Eric, IL 24541","Patel, Leon and Cox",208-13-7791,Contact David Leonard at pwillis@examplenet or +91 0099795140,"[(8, 21, 'name'), (47, 61, 'phone')]"
+Stephanie Brandt,"Mastercard
+Amy Johnson
+2715056645540984 10/27
+CVV: 078
+",ohicks@example.com,http://www.smith-white.org/,+03 1641110442,"4166 Autumn Walks
+Parksbury, TX 63713",Snyder Group,588-21-4973,"Payment made by Stephanie Brandt using card Mastercard
+Amy Johnson
+2715056645540984 10/27
+CVV: 078
+","[(16, 32, 'name'), (44, 99, 'credit_card')]"
+Jennifer Lane,"JCB 15 digit
+Shawn Powell
+213106990332601 07/26
+CVC: 720
+",xparks@example.com,http://www.atkins-strong.com/,+83 5256172767,"15030 Brian River
+Elizabethfort, MA 25267",Donaldson LLC,863-52-3691,"The address is 15030 Brian River
+Elizabethfort, MA 25267","[(15, 56, 'address')]"
+Shelia Cox,"VISA 13 digit
+Veronica Brandt
+4444575445420 06/33
+CVC: 659
+",cjohnson@example.org,http://www.stone.com/,+91 5862279325,"5510 Hancock Corners
+Port Troy, NV 65443","Reed, Silva and Whitney",277-48-7669,SSN 277-48-7669 is required,"[(4, 15, 'ssn')]"
+George Callahan,"VISA 16 digit
+Chelsea Goodwin
+4274492112818620 07/26
+CVC: 558
+",cnelson@example.com,https://tucker.net/,+91 5839984324,"1262 Thompson Valley
+West Jeffrey, PR 86768","Dixon, Jones and Davis",133-67-5363,"Invoice for Dixon, Jones and Davis, sent to 1262 Thompson Valley
+West Jeffrey, PR 86768.","[(44, 87, 'address'), (12, 34, 'company')]"
+Richard Moore,"Discover
+Andrew Williams
+6544052668028849 10/30
+CVC: 913
+",lyonsvernon@example.org,https://gaines-brandt.com/,+91 1890187969,"93841 Robinson Extension Apt. 400
+North Joseph, OH 72121","Lowe, Martinez and Franklin",616-79-0349,"Reach out to Richard Moore regarding the Lowe, Martinez and Franklin audit.","[(13, 26, 'name'), (41, 68, 'company')]"
+Elizabeth Callahan,"Mastercard
+Juan Cunningham
+5250137953351448 05/30
+CVV: 072
+",christopher46@example.com,https://www.kramer.com/,+39 7030391182,"PSC 8017, Box 9781
+APO AP 79477",Clark Inc,294-10-2215,My email is christopher46@example.com and phone is +39 7030391182.,"[(12, 37, 'email'), (51, 65, 'phone')]"
+Jeffrey Brown,"VISA 16 digit
+Jennifer Khan
+4558318330021373 05/30
+CVC: 811
+",patriciachen@example.net,http://rice-marquez.com/,+562 8856796699,"13961 Boone Loaf Suite 023
+North Rachel, ID 88973",Lopez-Colon,179-46-2717,"Confirmed transaction on card VISA 16 digit
+Jennifer Khan
+4558318330021373 05/30
+CVC: 811
+ for Jeffrey Brown.","[(95, 108, 'name'), (30, 90, 'credit_card')]"
+Pamela Carter,"VISA 16 digit
+John Campbell
+4178162827689122 02/27
+CVC: 362
+",jimmy26@example.net,http://orr-howard.com/,+91 5003100493,"728 Martin Camp Suite 058
+Hesterview, MT 40997",Smith-Perez,396-36-7676,Verify SSN 396-36-7676 at http://orr-howard.com/.,"[(26, 48, 'url'), (11, 22, 'ssn')]"
+Jesse Riley,"Discover
+Laura Boyd
+6519000173987398 09/35
+CVC: 816
+",william60@example.org,http://brown.com/,+91 7817488100,"83765 Spears Village Suite 928
+Danielston, IA 55593",Farrell-Waller,511-26-1375,The complete report for Farrell-Waller is available at http://brown.com/.,"[(55, 72, 'url'), (24, 38, 'company')]"
+Chloe Hill,"American Express
+David Paul
+344520089360681 05/34
+CID: 8507
+",amygreen@example.com,http://anthony-harrington.com/,+814 3700453406,"21748 Lawrence Ford
+Lake Zacharystad, MD 99121","Summers, Wells and Cole",278-71-5453,Contact Chloe Hill at amygreen@example.com or +814 3700453406.,"[(8, 18, 'name'), (22, 42, 'email'), (46, 61, 'phone')]"
+Mrs. Cynthia Michael MD,"VISA 13 digit
+Melanie Hurley
+4497909066544 10/30
+CVC: 721
+",johnstonrichard@example.org,https://dorsey.com/,+91 4591943433,"66262 Jason Mountain Apt. 630
+Anthonyfort, MA 02605",Frye Inc,516-81-9304,"Payment made by Mrs. Cynthia Michael MD using card VISA 13 digit
+Melanie Hurley
+4497909066544 10/30
+CVC: 721
+.","[(16, 39, 'name'), (51, 109, 'credit_card')]"
+James Moore,"JCB 16 digit
+James Arnold
+3570299127674168 04/34
+CVC: 490
+",jodystrong@example.com,https://www.baker-green.com/,+03 3510549499,"131 Watson Islands
+Lake Shane, SD 54971",Johnson Inc,661-91-4303,"The address is 131 Watson Islands
+Lake Shane, SD 54971.","[(15, 54, 'address')]"
+Steven Hansen,"Mastercard
+James Ball
+2720906620367220 05/34
+CVV: 109
+",whiteheadteresa@example.net,https://www.rivera.com/,+91 1810361331,"322 Dominguez Prairie Suite 572
+Perezville, AL 29791",Green-Flores,005-38-7766,SSN 005-38-7766 is required.,"[(4, 15, 'ssn')]"
+Robert Tran,"Discover
+Ryan Schneider
+6571992635531688 09/31
+CVC: 372
+",william91@example.com,http://may.info/,+39 7044038680,"132 Maria Extensions Suite 000
+Lake Douglas, AR 01181",Ramirez Ltd,072-62-9514,"Invoice for Ramirez Ltd, sent to 132 Maria Extensions Suite 000
+Lake Douglas, AR 01181.","[(33, 86, 'address'), (12, 23, 'company')]"
+Christopher Robinson,"VISA 19 digit
+Jeff Reed
+4779240204672497040 12/28
+CVC: 348
+",rodriguezkristina@example.org,http://hernandez.com/,+91 0488830268,"51658 Austin Corners
+New Jasonland, IA 76606","Frazier, Henson and Smith",793-17-0937,"Reach out to Christopher Robinson regarding the Frazier, Henson and Smith audit.","[(13, 33, 'name'), (48, 73, 'company')]"
+Deanna Bailey,"VISA 19 digit
+Crystal Simpson
+4846379548196493020 04/33
+CVC: 980
+",sullivandonald@example.org,http://www.white.com/,+58 9599777421,"55354 Mark Branch Apt. 424
+Richardsonmouth, CT 90626",Newton-Davis,630-17-8167,My email is sullivandonald@example.org and phone is +58 9599777421.,"[(12, 38, 'email'), (52, 66, 'phone')]"
+Dr. Hannah Horton,"American Express
+Roger Green
+371860288693201 07/32
+CID: 2138
+",rebecca50@example.com,https://lopez-santiago.com/,+49 4205843868,"382 Crystal Harbors Suite 614
+Port Kathytown, VA 55098",Short-Simmons,423-65-3450,"Confirmed transaction on card American Express
+Roger Green
+371860288693201 07/32
+CID: 2138
+ for Dr. Hannah Horton.","[(96, 113, 'name'), (30, 91, 'credit_card')]"
+Drew Wise,"Mastercard
+Andrew Buckley
+2720430473582249 12/27
+CVV: 574
+",crosbychristopher@example.net,http://joseph.com/,+31 5183605286,"3851 Church Turnpike
+Port Stephenberg, AL 68239",Rodriguez Group,876-31-9652,Verify SSN 876-31-9652 at http://josephcom/,"[(11, 22, 'ssn')]"
+Jennifer Tucker,"JCB 15 digit
+Jennifer Morris
+213126868958964 11/31
+CVC: 406
+",brittneylopez@example.com,http://www.harvey-robinson.biz/,+91 8566771573,"PSC 2920, Box 6599
+APO AP 13592","Rollins, Rodriguez and Rose",373-37-7145,"The complete report for Rollins, Rodriguez and Rose is available at http://www.harvey-robinson.biz/.","[(68, 99, 'url'), (24, 51, 'company')]"
+Dr. Eric Henderson,"Mastercard
+Jeanne Johnson
+2341415796271942 12/32
+CVV: 074
+",tray@example.com,http://cabrera.com/,+98 1779920398,"63173 Brown Harbor
+Lake Rodney, AR 56414","Berger, Larson and Williams",879-27-5122,Contact Dr. Eric Henderson at tray@example.com or +98 1779920398.,"[(8, 26, 'name'), (30, 46, 'email'), (50, 64, 'phone')]"
+Nancy Murray,"Maestro
+Erin Higgins
+503813681726 11/27
+CVV: 113
+",nfitzgerald@example.com,https://www.powell.com/,+74 7699232732,"9104 Cathy Streets
+Edwardsshire, MN 21972","Avila, Ramos and Wilkins",458-76-5505,"Payment made by Nancy Murray using card Maestro
+Erin Higgins
+503813681726 11/27
+CVV: 113
+.","[(16, 28, 'name'), (40, 89, 'credit_card')]"
+Dr. Shawn Sanders,"VISA 16 digit
+Dominic Rogers
+4044023812681213 06/33
+CVC: 590
+",yutimothy@example.net,http://www.jennings.info/,+91 8014857660,"782 Kathleen Curve
+Perezberg, NV 16141","Meyer, Chen and Mcgrath",212-82-7927,"The address is 782 Kathleen Curve
+Perezberg, NV 16141","[(15, 53, 'address')]"
+Christopher Bolton,"VISA 13 digit
+Troy Beck
+4858650530097 04/35
+CVC: 876
+",jonathan81@example.org,http://www.ward-cole.info/,+42 6570486840,"02484 Sean Shore Suite 154
+Lake Taylor, TN 47125","Lee, Barnes and Mclaughlin",624-26-4273,SSN 624-26-4273 is required.,"[(4, 15, 'ssn')]"
+Paul Williams,"VISA 16 digit
+Shelia Tran
+4349508278015940 03/29
+CVC: 249
+",jermaine35@example.com,https://herrera-roman.info/,+773 0025905197,"113 Jasmine Mountains Apt. 257
+Stevenland, DE 75592",Rodriguez and Sons,265-23-2951,"Invoice for Rodriguez and Sons, sent to 113 Jasmine Mountains Apt. 257
+Stevenland, DE 75592.","[(40, 91, 'address'), (12, 30, 'company')]"
+Lori Simmons,"VISA 16 digit
+Heather Brown
+4319344300777604 04/29
+CVC: 492
+",floresamy@example.org,https://ray-phillips.com/,+91 0952563302,"9490 Thomas Villages
+Lake Christopher, WV 07993","Aguilar, Blackwell and Clarke",203-82-1383,"Reach out to Lori Simmons regarding the Aguilar, Blackwell and Clarke audit","[(13, 25, 'name'), (40, 69, 'company')]"
+Randy Martin,"VISA 16 digit
+Brandon Richards
+4362421763541481 06/26
+CVC: 143
+",umoore@example.net,http://www.hoover-richmond.com/,+941 7838692902,"08640 Andersen Pine
+Nicoleberg, ND 46001",Kelley Group,827-42-5205,My email is umoore@examplenet and phone is +941 7838692902.,"[(43, 58, 'phone')]"
+Jill White,"JCB 16 digit
+Christian Vargas
+3539468526586493 02/26
+CVC: 607
+",roseamanda@example.net,http://bailey.biz/,+42 2194774054,"14209 Harris Trafficway Apt. 000
+Marshallberg, PR 95896",Bennett-Fox,038-22-8004,"Confirmed transaction on card JCB 16 digit
+Christian Vargas
+3539468526586493 02/26
+CVC: 607
+ for Jill White.","[(97, 107, 'name'), (30, 92, 'credit_card')]"
+Joseph Reed,"VISA 16 digit
+Brandon Mitchell
+4724757005883501 05/35
+CVC: 916
+",carloswilliams@example.net,https://wong.info/,+06 2491177313,"1558 Nicholas Cliff Suite 280
+New Michael, VT 50689",Fry and Sons,388-31-7787,Verify SSN 388-31-7787 at https://wong.info/.,"[(26, 44, 'url'), (11, 22, 'ssn')]"
+Samantha Jones,"American Express
+Benjamin Newman
+346491286737824 02/27
+CID: 3098
+",qreid@example.net,https://jones-black.com/,+775 4079137484,"021 Maria Forges Suite 416
+Starkmouth, NH 32370",Rice Group,593-21-1921,The complete report for Rice Group is available at https://jones-blackcom/.,"[(24, 34, 'company')]"
+Kathy Smith,"Mastercard
+Juan Johnson
+2249575681292429 02/30
+CVV: 914
+",jwilliams@example.net,http://frazier-noble.net/,+566 1695888278,"17661 Jones Pine Apt. 940
+Andersenton, DE 59191",Pope-Clark,505-76-8197,Contact Kathy Smith at jwilliams@example.net or +566 1695888278.,"[(8, 19, 'name'), (23, 44, 'email'), (48, 63, 'phone')]"
+Jessica Cummings,"Discover
+Todd Roberts
+6011879685082936 02/27
+CVC: 027
+",amandawood@example.org,http://white.biz/,+566 0585990986,"178 Daniel Fords Suite 025
+Krystalstad, FM 43321","Chavez, Jones and Walters",525-84-1065,"Payment made by Jessica Cummings using card Discover
+Todd Roberts
+6011879685082936 02/27
+CVC: 027
+.","[(16, 32, 'name'), (44, 98, 'credit_card')]"
+Sonya Leach,"JCB 16 digit
+Christopher Martin
+3513184121886465 04/28
+CVC: 429
+",daviskatherine@example.com,http://johnson-drake.com/,+91 6546356168,"2288 Johnson Street Apt. 422
+Christinabury, RI 02118","Marshall, Harvey and Smith",838-09-4109,"The address is 2288 Johnson Street Apt 422
+Christinabury, RI 02118.",[]
+Megan Lang,"Mastercard
+Nicholas Yang
+2260582719412551 12/32
+CVV: 101
+",youngjose@example.net,https://www.fox.org/,+21 8466746886,"081 Christopher Prairie
+Kaylaport, VA 42948",Perez-Kim,113-94-0667,SSN 113-94-0667 is required.,"[(4, 15, 'ssn')]"
+Ana Riddle,"JCB 16 digit
+Eric Le
+3563855550317770 04/32
+CVC: 982
+",davissteven@example.com,https://chapman-cunningham.org/,+91 7305801448,"912 Ramirez Island Suite 052
+Christopherview, MH 16875",Neal Inc,040-44-9979,"Invoice for Neal Inc, sent to 912 Ramirez Island Suite 052
+Christopherview, MH 16875","[(30, 84, 'address'), (12, 20, 'company')]"
+Kimberly Marquez,"JCB 16 digit
+Jason Newton
+3507746996534947 10/32
+CVC: 857
+",stephanieford@example.org,https://www.schmidt.com/,+91 2269989215,"6069 Long Flats
+New Lisa, CO 45202",Howard-Mcdonald,733-79-6452,Reach out to Kimberly Marquez regarding the Howard-Mcdonald audit.,"[(13, 29, 'name'), (44, 59, 'company')]"
+Matthew Anderson,"JCB 15 digit
+Juan Campbell
+213165727192647 06/32
+CVC: 576
+",butlershannon@example.net,http://ramsey-hernandez.net/,+91 2395489483,"598 Tyler Burg
+Port Benjaminview, FM 14456","Khan, Flores and Ross",127-37-1273,My email is butlershannon@example.net and phone is +91 2395489483.,"[(12, 37, 'email'), (51, 65, 'phone')]"
+Jeffrey Gardner,"JCB 15 digit
+Nicole Howard
+213177645466276 01/33
+CVC: 328
+",martinlinda@example.org,http://jimenez.com/,+62 7527646986,"USNS Dougherty
+FPO AA 29917",Nunez Inc,703-13-4379,"Confirmed transaction on card JCB 15 digit
+Nicole Howard
+213177645466276 01/33
+CVC: 328
+ for Jeffrey Gardner","[(93, 108, 'name'), (30, 88, 'credit_card')]"
+Steven Mendoza,"Diners Club / Carte Blanche
+Gerald Walker
+30560089766833 11/35
+CVC: 572
+",williamspatricia@example.com,http://www.sparks.com/,+79 9518587458,"256 Johnson Ports
+Caitlinshire, WI 75306",Rodgers-Gardner,807-07-1013,Verify SSN 807-07-1013 at http://wwwsparks.com/.,"[(11, 22, 'ssn')]"
+Marilyn Harper,"VISA 19 digit
+Barbara Mcdonald
+4717484382931375077 06/34
+CVC: 576
+",johnathanbell@example.org,http://www.mcclure-novak.com/,+263 3618974656,"05643 Brett Rapids
+South Anna, WY 58693",Martin-Ferguson,048-65-9243,The complete report for Martin-Ferguson is available at http://www.mcclure-novak.com/.,"[(56, 85, 'url'), (24, 39, 'company')]"
+Annette Watson,"JCB 15 digit
+Jennifer Hampton
+213143035925578 05/26
+CVC: 160
+",mccartyjessica@example.com,https://miranda.com/,+005 8761304247,"5366 Eduardo Junctions
+West Lisa, AL 17450","Potter, Smith and Walton",299-96-2845,Contact Annette Watson at mccartyjessica@example.com or +005 8761304247.,"[(8, 22, 'name'), (26, 52, 'email'), (56, 71, 'phone')]"
+Elizabeth Wade,"Discover
+Tamara Anderson
+6011077354798680 06/29
+CVC: 207
+",jdavis@example.com,https://rodriguez.com/,+91 1091210635,"35841 Margaret Creek Apt. 579
+New Tina, KY 53945","Oconnell, Jones and May",778-88-0207,"Payment made by Elizabeth Wade using card Discover
+Tamara Anderson
+6011077354798680 06/29
+CVC: 207
+","[(16, 30, 'name'), (42, 99, 'credit_card')]"
+Allison Fields,"VISA 16 digit
+Brian Brown
+4781432816513818 05/29
+CVC: 363
+",nicholslauren@example.net,http://www.wolfe.com/,+62 1830386069,"535 Carlson Circle
+Catherineville, NE 10582",Martinez Group,673-24-1819,"The address is 535 Carlson Circle
+Catherineville, NE 10582.","[(15, 58, 'address')]"
+Nathan Baker,"Diners Club / Carte Blanche
+Christopher Francis
+30258023293861 05/31
+CVC: 404
+",ttaylor@example.net,https://johnson.org/,+63 0154021923,"7675 Ashley Harbors
+Lake Kimberlyton, MN 04378",Ibarra-Wagner,217-12-9025,SSN 217-12-9025 is required.,"[(4, 15, 'ssn')]"
+Kathy Roberson,"Mastercard
+Dean Gordon
+5282107248046550 02/34
+CVV: 663
+",adamsadam@example.org,http://www.hawkins.biz/,+26 4892531909,"995 Ann Bridge Suite 313
+North Ronnie, IA 21629",Gardner Ltd,001-41-6430,"Invoice for Gardner Ltd, sent to 995 Ann Bridge Suite 313
+North Ronnie, IA 21629.","[(33, 80, 'address'), (12, 23, 'company')]"
+Sheila Torres,"JCB 16 digit
+Kimberly Garner
+3562740380542162 07/26
+CVC: 557
+",karen89@example.com,https://barker.com/,+91 2504341547,"086 Marilyn Ports Suite 808
+Matthewsberg, WY 74987","Moon, Hendrix and Gonzalez",311-60-9763,"Reach out to Sheila Torres regarding the Moon, Hendrix and Gonzalez audit","[(13, 26, 'name'), (41, 67, 'company')]"
+Craig Shields,"VISA 13 digit
+Taylor Murphy
+4805181571090 04/30
+CVC: 950
+",loveadam@example.org,http://www.clark.biz/,+81 0554411058,"7430 Williams Village
+Johnbury, MO 50362",Wells Ltd,812-96-5885,My email is loveadam@example.org and phone is +81 0554411058.,"[(12, 32, 'email'), (46, 60, 'phone')]"
+Michael Moran,"JCB 16 digit
+Debra Porter
+3567980977519042 09/32
+CVC: 651
+",alex07@example.org,https://martinez-anderson.org/,+67 3958530915,"471 White Gateway Suite 907
+Meyershire, FL 76454","Valentine, Patel and Cook",107-18-5920,"Confirmed transaction on card JCB 16 digit
+Debra Porter
+3567980977519042 09/32
+CVC: 651
+ for Michael Moran","[(93, 106, 'name'), (30, 88, 'credit_card')]"
+Brandi Lewis,"Discover
+Grant Wolfe
+6011179163109214 08/34
+CVC: 577
+",ashleygross@example.net,http://dickerson.biz/,+91 3212320354,"PSC 5781, Box 1647
+APO AP 97513",Dalton PLC,822-77-8777,Verify SSN 822-77-8777 at http://dickerson.biz/.,"[(26, 47, 'url'), (11, 22, 'ssn')]"
+Courtney Williams,"VISA 13 digit
+Jessica Hicks
+4555489328848 11/34
+CVC: 313
+",andrewsshawn@example.org,http://armstrong.com/,+022 9083634268,"77790 Carter Well Suite 242
+New Ann, WA 69832",Cox PLC,695-06-3830,The complete report for Cox PLC is available at http://armstrong.com/.,"[(48, 69, 'url'), (24, 31, 'company')]"
+Howard Best,"Maestro
+Philip Mitchell
+676135998232 09/26
+CVV: 945
+",angelathompson@example.com,http://jones.org/,+705 5382426431,"03691 Reginald Port
+East Kimberlytown, PA 30397","Stuart, Mills and Brennan",351-02-9546,Contact Howard Best at angelathompson@example.com or +705 5382426431.,"[(8, 19, 'name'), (23, 49, 'email'), (53, 68, 'phone')]"
+Olivia Russell,"Discover
+Brian Ryan
+6539676397687116 10/31
+CVC: 107
+",mcdonaldjames@example.net,http://www.rich.info/,+05 1555082947,"195 Mason Stravenue
+Nicolehaven, DC 61449","Mack, Fox and Dougherty",013-96-0029,"Payment made by Olivia Russell using card Discover
+Brian Ryan
+6539676397687116 10/31
+CVC: 107
+.","[(16, 30, 'name'), (42, 94, 'credit_card')]"
+Christina Bates,"American Express
+Jacqueline Bender
+347916295137326 01/27
+CID: 4394
+",angelicaharris@example.org,https://willis.com/,+91 5085163878,"USNS Warren
+FPO AE 66760",Cameron PLC,119-41-7822,"The address is USNS Warren
+FPO AE 66760.","[(15, 39, 'address')]"
+Daniel Johnson,"VISA 13 digit
+Mary Sullivan
+4760936450381 04/33
+CVC: 479
+",armstrongdustin@example.org,http://hurley-hayes.com/,+80 4774935245,"PSC 4542, Box 0769
+APO AA 70613",Schmidt Inc,103-81-5805,SSN 103-81-5805 is required.,"[(4, 15, 'ssn')]"
+Nicholas Hernandez,"VISA 13 digit
+Diana Vaughn
+4783428769092 12/34
+CVC: 657
+",cuevaspaige@example.org,http://johnston.com/,+91 8780388077,"3375 Brandon Flats
+Angelamouth, KY 13429","Alexander, King and Phillips",872-07-5628,"Invoice for Alexander, King and Phillips, sent to 3375 Brandon Flats
+Angelamouth, KY 13429.","[(50, 90, 'address'), (12, 40, 'company')]"
+Rachel Morris,"JCB 16 digit
+Shelly Johnson
+3530086879001420 08/28
+CVC: 050
+",stephenstoni@example.org,https://www.daniel-taylor.com/,+91 7870302415,"USCGC Thompson
+FPO AP 10287",Stewart PLC,262-69-4190,Reach out to Rachel Morris regarding the Stewart PLC audit,"[(13, 26, 'name'), (41, 52, 'company')]"
+Melissa Fleming,"JCB 16 digit
+Crystal Bowman
+3560005169681199 03/35
+CVC: 182
+",bennetterin@example.org,http://cruz.com/,+91 9048206234,"USNS Castaneda
+FPO AA 95825","Lee, Perez and Graham",785-74-5214,My email is bennetterin@exampleorg and phone is +91 9048206234.,"[(48, 62, 'phone')]"
+Lisa Lawson,"VISA 13 digit
+Emily Orr
+4047779054466 10/35
+CVC: 124
+",ajuarez@example.com,http://parsons-carson.com/,+68 0967035895,"6636 Carey Meadow Apt. 526
+Josephburgh, MP 61284","Heath, Lewis and Perez",521-32-6876,"Confirmed transaction on card VISA 13 digit
+Emily Orr
+4047779054466 10/35
+CVC: 124
+ for Lisa Lawson.","[(88, 99, 'name'), (30, 83, 'credit_card')]"
+Allison Ramirez,"JCB 16 digit
+Natasha Nguyen
+3580970168640668 03/31
+CVC: 646
+",sandrastein@example.org,http://www.jimenez.info/,+08 4569271369,"3458 Terrell Junction Suite 486
+Phillipmouth, MT 16953",Willis and Sons,891-19-5379,Verify SSN 891-19-5379 at http://www.jimenez.info/.,"[(26, 50, 'url'), (11, 22, 'ssn')]"
+Mrs. Lauren Riley,"VISA 19 digit
+Raymond Perez
+4658838147122366253 05/26
+CVC: 562
+",wfoster@example.com,http://bauer.com/,+85 4601339635,"PSC 7965, Box 7484
+APO AP 88363",Murphy-Phillips,894-89-7749,The complete report for Murphy-Phillips is available at http://bauercom/,"[(24, 39, 'company')]"
+Tiffany Mcmahon,"VISA 13 digit
+Susan Baldwin
+4406645414801 09/26
+CVC: 022
+",lcarson@example.net,https://www.williams.com/,+91 0435667218,"60412 Angela Turnpike Suite 840
+Christensenmouth, CT 07124","Holt, Nguyen and Brown",150-83-0544,Contact Tiffany Mcmahon at lcarson@example.net or +91 0435667218.,"[(8, 23, 'name'), (27, 46, 'email'), (50, 64, 'phone')]"
+Mary Brady,"VISA 13 digit
+Donna Harrell
+4211705168465 02/31
+CVC: 670
+",ronald09@example.net,https://williams.com/,+91 1800658856,"758 Melanie Hollow Suite 298
+New Karinaside, AL 79493",Peters and Sons,190-97-5824,"Payment made by Mary Brady using card VISA 13 digit
+Donna Harrell
+4211705168465 02/31
+CVC: 670
+.","[(16, 26, 'name'), (38, 95, 'credit_card')]"
+Sara Anderson,"JCB 15 digit
+Jerry Sanchez
+213101630595709 09/35
+CVC: 634
+",carrlisa@example.com,http://smith-cochran.com/,+591 7927516013,"90195 Gutierrez Mill
+Lake Jerryberg, NC 11798","Page, Williams and Berry",307-81-7001,"The address is 90195 Gutierrez Mill
+Lake Jerryberg, NC 11798","[(15, 60, 'address')]"
+Amy Callahan,"VISA 13 digit
+Corey Snyder
+4837002947530 07/26
+CVC: 805
+",breyes@example.net,http://www.johnson.net/,+262 7560636134,"74887 Greene Streets Suite 925
+Victoriaburgh, AK 64485",Davis Inc,518-96-1013,SSN 518-96-1013 is required.,"[(4, 15, 'ssn')]"
+James Allen,"American Express
+Steven Gray
+345655564128739 07/34
+CID: 4121
+",linda41@example.org,http://www.arnold-curry.org/,+933 3309786140,"20958 Megan Rapid
+Valenciamouth, MI 69146",Cabrera Group,265-25-8670,"Invoice for Cabrera Group, sent to 20958 Megan Rapid
+Valenciamouth, MI 69146","[(35, 76, 'address'), (12, 25, 'company')]"
+Kathleen Hernandez,"American Express
+Joseph Curtis
+347022037469901 02/28
+CID: 6626
+",robertgraham@example.org,https://www.perez-mccarty.com/,+52 3778083904,"16635 Anderson Turnpike Suite 782
+Christopherton, CA 24397",Nguyen LLC,184-72-6456,Reach out to Kathleen Hernandez regarding the Nguyen LLC audit.,"[(13, 31, 'name'), (46, 56, 'company')]"
+Tara Martin,"VISA 16 digit
+Melissa Scott
+4259967603022054 01/30
+CVC: 408
+",ywise@example.net,http://smith-lowe.org/,+91 9104006265,"68320 Watkins Gateway Apt. 039
+Sanchezbury, UT 74554",Martin Group,573-85-2903,My email is ywise@example.net and phone is +91 9104006265.,"[(12, 29, 'email'), (43, 57, 'phone')]"
+Eric Hudson,"Mastercard
+Sydney Perez
+5426133502696952 01/33
+CVV: 688
+",lambertkenneth@example.net,https://roberson.biz/,+99 7808428822,"08525 Jennifer Lane Suite 327
+New Karen, ME 73892",Dawson LLC,841-61-7941,"Confirmed transaction on card Mastercard
+Sydney Perez
+5426133502696952 01/33
+CVV: 688
+ for Eric Hudson","[(91, 102, 'name'), (30, 86, 'credit_card')]"
+Maria Wall,"Mastercard
+Edward Huang
+2283419327958928 06/29
+CVV: 668
+",stantonjodi@example.com,https://haney.com/,+08 3466516858,"8284 Graham Ports
+Robertshire, TN 22891",Johnson PLC,043-93-7776,Verify SSN 043-93-7776 at https://haneycom/,"[(11, 22, 'ssn')]"

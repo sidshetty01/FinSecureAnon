@@ -61,8 +61,8 @@ def anonymize(text: str, ents: List[Dict]) -> str:
     # replace from end to start to keep spans stable
     out = text
     for ent in sorted(ents, key=lambda e: e["start"], reverse=True):
-        label = ent["label"].lower()
-        replacement = REPLACEMENTS.get(label, "[REDACTED]")
+        # Use "XXXXXX" for all redactions as per user preference
+        replacement = "XXXXXX"
         out = out[: ent["start"]] + replacement + out[ent["end"] :]
     return out
 
@@ -117,6 +117,45 @@ def extract_pdf_text(file) -> str:
         return text
     except Exception as e:
         raise RuntimeError(f"Failed to read PDF: {e}")
+
+
+def redact_pdf(file_bytes: bytes, entities: List[Dict]) -> bytes:
+    """
+    Redact PII from a PDF file using PyMuPDF (fitz).
+    Replaces the PII text with its label (e.g., "NAME").
+    """
+    import fitz  # PyMuPDF
+
+    doc = fitz.open(stream=file_bytes, filetype="pdf")
+    
+    # Group entities by text to avoid redundant searches
+    # We map text -> label (using the first found label for simplicity if ambiguous)
+    text_to_label = {ent["text"]: ent["label"] for ent in entities}
+
+    for page in doc:
+        for text, label in text_to_label.items():
+            # Search for the text on the page
+            quads = page.search_for(text)
+            
+            # Add redaction annotations for each match
+            for quad in quads:
+                # Mask with "XXXXXX"
+                # fill=(1, 1, 1) -> White background
+                # text_color=(0, 0, 0) -> Black text
+                page.add_redact_annot(
+                    quad, 
+                    text="XXXXXX", 
+                    fontsize=25, 
+                    fill=(1, 1, 1), 
+                    text_color=(0, 0, 0)
+                )
+        
+        # Apply the redactions
+        page.apply_redactions()
+
+    # Save to bytes
+    output_bytes = doc.tobytes()
+    return output_bytes
 
 
 # -----------------------------
@@ -182,6 +221,7 @@ with col2:
 if run and sample_text and nlp:
     ents = predict(nlp, sample_text)
 
+
     if len(ents) == 0:
         st.info("No entities detected.")
 
@@ -212,29 +252,39 @@ if batch_files and nlp:
                 f.seek(0)
                 dfs.append(pd.read_csv(f, encoding="latin-1"))
         df = pd.concat(dfs, ignore_index=True)
-        if "text" not in df.columns:
-            st.error("CSV must contain a 'text' column. You can also use the folder mode and specify a custom column name.")
-        else:
-            results = []
-            anonymized = []
-            for t in df["text"].astype(str).tolist():
-                ents = predict(nlp, t)
-                results.append(json.dumps(ents, ensure_ascii=False))
-                anonymized.append(anonymize(t, ents))
-            out_df = df.copy()
-            out_df["predictions"] = results
-            out_df["anonymized_text"] = anonymized
+        
+        st.subheader("CSV Batch Processing")
+        st.dataframe(df.head())
+        
+        # Allow user to select the column to anonymize
+        all_cols = list(df.columns)
+        default_idx = all_cols.index("text") if "text" in all_cols else 0
+        target_col = st.selectbox("Select column to anonymize", all_cols, index=default_idx)
+        
+        if st.button("Process & Anonymize CSV"):
+            with st.spinner("Processing..."):
+                # Process the selected column
+                anonymized_col = []
+                for t in df[target_col].astype(str).tolist():
+                    ents = predict(nlp, t)
+                    # Replace PII in-place
+                    anonymized_col.append(anonymize(t, ents))
+                
+                # Create output dataframe with replaced column
+                out_df = df.copy()
+                out_df[target_col] = anonymized_col
+                
+                st.success(f"Processed {len(out_df)} rows.")
+                st.dataframe(out_df.head())
 
-            st.success(f"Processed {len(out_df)} rows from {len(batch_files)} file(s).")
-            st.dataframe(out_df.head(50))
-
-            csv_bytes = out_df.to_csv(index=False).encode("utf-8")
-            st.download_button(
-                "Download results CSV",
-                data=csv_bytes,
-                file_name="pii_results.csv",
-                mime="text/csv",
-            )
+                csv_bytes = out_df.to_csv(index=False).encode("utf-8")
+                st.download_button(
+                    "Download Masked CSV",
+                    data=csv_bytes,
+                    file_name="masked_output.csv",
+                    mime="text/csv",
+                    type="primary"
+                )
     except Exception as e:
         st.error(f"Batch processing failed: {e}")
 
@@ -296,18 +346,40 @@ if 'pdf_files' in locals() and pdf_files and nlp:
                 st.warning(f"No extractable text found in {updf.name}.")
                 continue
             ents = predict(nlp, pdf_text)
-            anon = anonymize(pdf_text, ents)
+            anon_text = anonymize(pdf_text, ents)
+
+            # Perform PDF Redaction
+            try:
+                # Reset file pointer to read bytes for redaction
+                updf.seek(0)
+                file_bytes = updf.read()
+                redacted_pdf_bytes = redact_pdf(file_bytes, ents)
+            except Exception as e:
+                st.error(f"Redaction failed for {updf.name}: {e}")
+                redacted_pdf_bytes = None
 
             with st.expander(f"PDF: {updf.name} – {len(ents)} entities detected"):
-                st.markdown("**Preview (first 1500 chars, anonymized):**")
-                st.code(anon[:1500] + ("..." if len(anon) > 1500 else ""))
-                st.markdown("**Download anonymized full text:**")
-                st.download_button(
-                    label=f"Download {updf.name}.anonymized.txt",
-                    data=anon.encode("utf-8"),
-                    file_name=f"{updf.name}.anonymized.txt",
-                    mime="text/plain",
-                )
+                st.markdown("**Preview (first 1500 chars, anonymized text):**")
+                st.code(anon_text[:1500] + ("..." if len(anon_text) > 1500 else ""))
+                
+                col_dl1, col_dl2 = st.columns(2)
+                
+                with col_dl1:
+                    st.download_button(
+                        label=f"Download Anonymized Text",
+                        data=anon_text.encode("utf-8"),
+                        file_name=f"{updf.name}.anonymized.txt",
+                        mime="text/plain",
+                    )
+                
+                if redacted_pdf_bytes:
+                    with col_dl2:
+                        st.download_button(
+                            label=f"Download Redacted PDF",
+                            data=redacted_pdf_bytes,
+                            file_name=f"{updf.name}.redacted.pdf",
+                            mime="application/pdf",
+                        )
     except Exception as e:
         st.error(f"PDF processing failed: {e}")
 
