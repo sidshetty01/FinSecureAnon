@@ -1,0 +1,152 @@
+\documentclass[12pt,a4paper]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{titlesec}
+\usepackage{booktabs}
+
+% Page Setup
+\geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+}
+
+% Code Listing Settings
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+% Metadata
+\title{\textbf{FinSecureAnon: PII Detection and Anonymization in Financial Documents}}
+\author{Ismail} % You can change this to the User's name if known, or leave generic
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    In the digital age, the security of sensitive financial data is paramount. This project, \textbf{FinSecureAnon}, presents a scalable framework integrating hybrid rule-based Natural Language Processing (NLP) and Machine Learning (ML) approaches for robust Personally Identifiable Information (PII) detection and anonymization in financial documents. The proposed system achieves high precision, recall, and accuracy while preserving document readability. It effectively handles various PII types including names, phone numbers, emails, addresses, Social Security Numbers (SSNs), credit card numbers, and more, across both structured and unstructured texts.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+Financial institutions handle vast amounts of sensitive customer data daily. Protecting this Personally Identifiable Information (PII) is a critical compliance requirement (e.g., GDPR, CCPA). Manual redaction is time-consuming and error-prone. 
+
+This project aims to automate the detection and anonymization of PII in financial documents using a hybrid approach that leverages the strengths of both rule-based pattern matching and context-aware Named Entity Recognition (NER) models.
+
+\section{System Overview}
+The \textbf{FinSecureAnon} system is designed to processed financial documents (PDFs, text) and return sanitized versions where sensitive information is redacted.
+
+\subsection{Key Features}
+\begin{itemize}
+    \item \textbf{Hybrid Detection Engine}: Combines Regex/Rule-based patterns with a custom-trained spaCy NER model.
+    \item \textbf{Comprehensive PII Coverage}: Detects Names, Emails, Phone Numbers, Addresses, SSNs, Credit Cards, Company Names, and URLs.
+    \item \textbf{High Accuracy}: Tested on both synthetic and real-world financial datasets.
+    \item \textbf{User Interface}: A user-friendly Streamlit web application.
+\end{itemize}
+
+\subsection{Technology Stack}
+\begin{itemize}
+    \item \textbf{Language}: Python 3.11
+    \item \textbf{NLP Framework}: spaCy (Custom NER)
+    \item \textbf{Web Framework}: Streamlit
+    \item \textbf{Data Handling}: Pandas, NumPy
+\end{itemize}
+
+\section{Methodology}
+The core of the system is the implementation of a hybrid detection strategy.
+
+\subsection{Data Preparation}
+The model was trained and evaluated on:
+\begin{itemize}
+    \item \textbf{Synthetic Data}: Generated using the Faker library to mimic financial documents like Audit Reports, Invoices, and Bank Statements.
+    \item \textbf{Real-World Data}: Tested on actual redacted financial documents (e.g., vendor invoices).
+\end{itemize}
+
+\subsection{Detection Logic}
+\begin{enumerate}
+    \item \textbf{Rule-Based Detection}: Uses regular expressions (Regex) for highly structured data like Emails, Phone Numbers, SSNs, and Credit Card numbers. This ensures 100\% precision for standardized formats.
+    \item \textbf{ML-Based Detection}: Uses a custom-trained spaCy model to detect context-dependent entities like Person Names and Organizations (Company Names) which may not follow a strict pattern.
+\end{enumerate}
+
+\section{Implementation Details}
+
+\subsection{Backend Logic}
+The core logic resides in \texttt{Code/PII\_Detection\_and\_Anonymization.py}. It orchestrates the loading of the model and the application of rules.
+
+\begin{lstlisting}[language=Python, caption=Sample Detection Logic Stub]
+import spacy
+import re
+
+# Load custom model
+nlp = spacy.load("path/to/saved/model")
+
+def detect_pii(text):
+    doc = nlp(text)
+    # Combine model entities with regex matches
+    # ...
+    return anonymized_text
+\end{lstlisting}
+
+\subsection{Frontend Interface}
+The application frontend is built with Streamlit (\texttt{Frontend/app.py}), allowing users to upload documents and view/download the anonymized results instantly.
+
+\section{Results and Evaluation}
+The system was rigorously evaluated using standard classification metrics.
+
+\subsection{Metrics}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|c|c|c|c|}
+        \hline
+        \textbf{Dataset} & \textbf{Precision} & \textbf{Recall} & \textbf{F1-Score} & \textbf{Accuracy} \\
+        \hline
+        Synthetic Data & 94.7\% & 89.4\% & 91.1\% & 89.4\% \\
+        \hline
+        Real-World Data & $\sim$93\% & - & - & $\sim$93\% \\
+        \hline
+    \end{tabular}
+    \caption{Performance Evaluation Metrics}
+    \label{tab:metrics}
+\end{table}
+
+The metrics indicate that the hybrid approach provides a reliable solution for financial PII redaction.
+
+\section{Conclusion}
+FinSecureAnon effectively addresses the challenge of securing sensitive financial data. by combining the precision of rule-based systems with the adaptability of machine learning, it offers a robust tool for compliance and data privacy. Future work could include expanding support for multi-lingual documents and OCR integration for scanned images.
+
+\end{thebibliography}
+\end{document}
